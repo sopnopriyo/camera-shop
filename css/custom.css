@@ -1,3 +1,35 @@
 .homepage-img{
 	padding-left: 65px;
 }
+#contact-area {
+	border: 1px solid black ;
+    border-radius: 10px ;
+	width: 650px;
+	margin-top: 25px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 550px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}

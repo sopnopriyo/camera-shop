@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to the world of virtual eye !</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">CameraShop</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="camera.html"> Cameras</a></li>
+        <li><a href="accesories.html">Accesories</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+	<div>
+		<div class="homepage-img panel panel-primary">
+			<img src="img/contact-us-banner.jpg" style="width:100%;height: 100%">
+		</div>
+	</div>  
+ <br>
+ <div id="contact-area">
+			
+			<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+				
+				<label for="City">City:</label>
+				<input type="text" name="City" id="City" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+			
+			<div style="clear: both;"></div>
+		
+		</div>
+	
+<br>
+
+<footer class="container-fluid text-center">
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+  <p>Online Store Copyright</p>  
+</footer>
+
+</body>
+</html>
