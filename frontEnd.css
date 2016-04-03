@@ -8,19 +8,27 @@ nav {
     line-height:30px;
     background-color:#eeeeee;
     height:35px;
-    padding:5px;          
+    padding-left:10px;          
 }
 aside{
     background-color: #A8A8A8 ;
     float: left;
     width: 200px;
     height: 500px;
+    padding: 5px;
     overflow:auto;
 }
-section {
+main {
     width:1000px;
     float:right;
     padding:10px;	 	 
+}
+figure {
+    width: 24%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
 }
 footer {
     background-color:black;
