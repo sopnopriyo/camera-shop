@@ -1,3 +1,11 @@
+html,
+ body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            border: 0;
+            display: block;  /* No floating content on sides */
+}
 header {
     background-color:black;
     color:white;
@@ -8,20 +16,30 @@ nav {
     line-height:30px;
     background-color:#eeeeee;
     height:35px;
-    padding-left:10px;          
+    padding-left:10px;
+    overflow: visible;
+        
+}
+nav a{
+    text-decoration: none;
 }
 aside{
     background-color: #A8A8A8 ;
     float: left;
     width: 200px;
-    height: 500px;
+    height: 100%;
     padding: 5px;
-    overflow:auto;
+    
 }
 main {
     width:1000px;
-    float:right;
-    padding:10px;	 	 
+    overflow: visible;
+    padding:10px;
+    	 	 
+}
+
+@media all and (max-width: 30em) {
+  /* Alternative narrow styles */
 }
 figure {
     width: 24%;
