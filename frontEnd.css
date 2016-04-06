@@ -20,12 +20,30 @@ nav {
     overflow: visible;
         
 }
+#right-nav{
+    float: right;
+    display: block;
+    margin-right: 20px;
+    overflow: visible;
+}
+#right-nav img{
+    position: center;
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+
+}
 nav a{
     text-decoration: none;
 }
 
+#search-nav{
+    background-color: #A9A9A9;
+    overflow: visible;
+}
+
 nav  a:hover {
-    background: #deff90;
+    background: #4CAF50;
     color: #485e0f;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
