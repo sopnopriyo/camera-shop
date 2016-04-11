@@ -59,21 +59,21 @@ aside{
     height: 100%;
     padding-left: 10px;
     margin-top: 10px;
-    
-}
-#right,#left {
+    margin-left: 2%;
     border: 1px solid #E9E9E9;
     
-    margin: 0 2%;
-    
 }
-#left{
+#products{
+    width: 100%;
     overflow: hidden;
     position: relative;
     width: 70%;
     margin-top: 10px;
-    
+    border: 1px solid #E9E9E9;
 }
+
+
+
 
 
 #right h3, #left h3 {
@@ -97,6 +97,18 @@ aside{
 
 #left ul{
     list-style-type: none;
+}
+
+#right ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#left ul li {
+    float:left;
+    padding-bottom: 21px;
+    width: 25%;
 }
 
 #right ul li {
@@ -162,16 +174,8 @@ aside{
     text-decoration: none;
 }
 
-#right ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-#left ul li {
-    float:left;
-    padding-bottom: 21px;
-    width: 25%;
-}
+
+
 #left ul li:hover {
     background-color: #fbfbfb;
 }
