@@ -55,7 +55,7 @@ nav  a:hover {
 aside{
     background-color: white ;
     float: left;
-    width: auto;
+    width: 25%;
     height: 100%;
     padding-left: 10px;
     margin-top: 10px;
@@ -63,7 +63,7 @@ aside{
 }
 #right,#left {
     border: 1px solid #E9E9E9;
-    float: left;
+    
     margin: 0 2%;
     
 }
