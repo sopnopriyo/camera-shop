@@ -72,10 +72,10 @@ aside{
     border: 1px solid #E9E9E9;
 }
 
-
-
-
-
+#about-us-section{
+    margin-left: 3%;
+    margin-right: 3%;
+}
 #right h3, #left h3 {
     background: -moz-linear-gradient(#ffffff, #F6F6F6); /* FF 3.6+ */  
     background: -ms-linear-gradient(#ffffff, #F6F6F6); /* IE10 */  
