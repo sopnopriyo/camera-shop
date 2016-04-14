@@ -3,6 +3,8 @@
 <head>
 	<title>Contact Us</title>
 	<link rel="stylesheet" type="text/css" href="frontEnd.css">
+	<link rel="stylesheet" type="text/css" href="cont.css">
+	
 </head>
 <body>
 
@@ -25,32 +27,33 @@
   
 </nav>
 <br><br>
-<form>
-	<section>
-	<caption>Contact Form</caption>
-	<center>
-			<fieldset style="padding-left: 3%; width: 520px; height: 550px; border: solid; ">
-			<p style="font-size: 16px;">Full Name</p>
-			<input type="text" name="fullname" style="width: 500px; height: 30px; border: solid ">
+<div class="container">  
+  	<form >
+	    <h2><center>Contact Us Now!</center></h2>
+		
+	    <fieldset>
+	    	<input placeholder="Full Name" type="text" name="name">
+	    </fieldset>
 
-			<p style="font-size: 16px;">Email</p>
-			<input type="text" name="email" style="width: 500px; height: 30px; border: solid ">
+	    <fieldset>
+	    	<input placeholder="Email Address" type="text" name="email">
+	    </fieldset>
 
-			<p style="font-size: 16px;">Mobile Number</p>
-			<input type="text" name="mobile" style="width: 500px; height: 30px; border: solid ">
+	    <fieldset>
+	    	<input placeholder="Your Phone Number" type="telephone" name="tel">
+	    </fieldset>
 
-			<p style="font-size: 16px;">Country</p>
-			<input type="text" name="country" style="width: 500px; height: 30px; border: solid ">
+	    <fieldset>
+	    	<textarea placeholder="Enter Your Message Here" name="message"></textarea>
+	    </fieldset>
 
-			<p style="font-size: 16px;">Type Message</p>
-			<textarea name="comments" id="comments" cols="60" rows="8" style="border: solid"> </textarea><p></p>
-
-			
-			<input type="submit" value="Contact"> <input type="reset" value="Reset" >
-			
-			</fieldset>
-		</center>
-	</section>
-</form>
+	    <fieldset>
+	      	<button type="submit" name="submit">S U B M I T</button>
+	    </fieldset>	
+	    
+  	</form>
+ 
+  
+</div>
 </body>
 </html>
