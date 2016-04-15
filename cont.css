@@ -1,0 +1,57 @@
+
+
+body {
+	background: white;
+}
+
+.container {
+	max-width:500px;
+	width:100%;
+	margin:0 auto;
+	position: relative;	
+}
+
+h2 {
+
+	color: rgb(255, 107, 0);
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+fieldset {
+	border: medium none ;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+input[type="text"],  input[type="email"], input[type="telephone"], textarea {
+	
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+textarea {
+
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+button[type="submit"] {
+
+	cursor:pointer;
+	width:520px;
+	border: none;
+	background:#66CC99;
+	color:#FFF;
+	margin:0;
+	padding:10px;
+	font-size:24px;
+}
+
