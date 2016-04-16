@@ -26,31 +26,45 @@
   
 </nav>
 <br><br>
-<form>
+
 	<section>
-	<center>
-			<fieldset style="padding-left: 3%; width: 520px; height: 550px; border: solid; ">
-			<p style="font-size: 16px;">Full Name</p>
-			<input type="text" name="fullname" style="width: 500px; height: 30px; border: solid ">
-
-			<p style="font-size: 16px;">Email</p>
-			<input type="text" name="email" style="width: 500px; height: 30px; border: solid ">
-
-			<p style="font-size: 16px;">Mobile Number</p>
-			<input type="text" name="mobile" style="width: 500px; height: 30px; border: solid ">
-
-			<p style="font-size: 16px;">Country</p>
-			<input type="text" name="country" style="width: 500px; height: 30px; border: solid ">
-
-			<p style="font-size: 16px;">Type Message</p>
-			<textarea name="comments" id="comments" cols="60" rows="8" style="border: solid"> </textarea><p></p>
-
-			
-			<input type="submit" value="Contact"> <input type="reset" value="Reset" >
-			
-			</fieldset>
+		<center>
+			<div id="contact-form" class="clearfix">
+    <h1>Get In Touch!</h1>
+    <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:</li>
+    </ul>
+    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+    <form method="post" action="process.php">
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" />
+         
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+         
+        <label for="enquiry">Enquiry: </label>
+        <select id="enquiry" name="enquiry">
+            <option value="general">General</option>
+            <option value="sales">Sales</option>
+            <option value="support">Support</option>
+        </select>
+         
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+         
+        <span id="loading"></span>
+        <input type="submit" value="Submit" id="submit-button" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+</div>
 		</center>
 	</section>
-</form>
+
+<footer>
+      Copyright @University of Malaya
+</footer>
 </body>
 </html>
