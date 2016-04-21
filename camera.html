@@ -11,183 +11,154 @@
 <header>
 <title>Marvel Camera Shop</title>
 <h1>CAMERA GALLERY</h1>
-
-
 </header>
 
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="camera.html">Camera</a> |
-  <a href="accesories.html">Accesories</a> |
-  <a href="about-us.html">About Us</a> |
-  <a href="contact-us.html">Contact Us</a>
-  
-  <div id="right-nav">
-       <a href="#"> <img src="img/user-icon.png"  height="30px" width="30px"> Your Account</a>
-       <a href="#"> <img src="img/cart-icon.png"  height="30px" width="30px"> Cart</a>
-  </div>
- 
+<nav id="top-main-nav">
+   <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="camera.html">Camera</a> </li>
+        <li><a href="accesories.html">Accesories</a> </li>
+        <li><a href="about-us.html">About Us</a> </li>
+        <li><a href="contact-us.html">Contact Us</a> </li>
+        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
+        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
+    </ul>
+
 </nav>
-<section id="camera-main">
-      <div class="camera-img">
+<nav id="search-nav">
+  <center>
+    <form method="post" action="searchItem.php">
+      <input type="text" name="keyword" placeholder="Type an item">
+      <select>
+        <option value="camera">Camera</option>
+        <option value="lense">Lenses</option>
+        <option value="accesories">Accesories</option>
+        <option value="mercedes">Others</option>
+      </select>
+      <button type="submit" name="search">Search</button>
+    </form>
+  </center> 
+</nav>
 
-          <img src="img/camera1.jpg" alt="Camera 1" width="250" height="250">
-        
-        <div class="desc">EOS 6D EF 24-105mm f/4L IS USM Lens Kit<br>Price:$500</div>
-      <div class='rating_bar'>
-          <div  class='rating' style='width:60%;'>
+<aside id="camera-page-sidebar">
+<h1>Catagories</h1>
 
-          </div>
-      </div>
-      <div class="actions">
-              <a href="#">Details</a>
-              <a  class="add-to-cart" href="#" data-name="camera" data-price="50">Add to cart</a>
-         </div>
-      </div>
+    <nav>
+       <ul class="camera-page-sidenav">
+           <li> <a href="#">DSLR</a></li>
+            <li> <a href="#">SLR</a></li>
+            <li> <a href="#">Digital Camera</a></li>
+            <li> <a href="#">Camrecorder</a></li>
+            <li> <a href="#">Broadcast Camera</a></li>
+       </ul> 
+    </nav>
+</aside>
 
+<section id="camera-contents">
+   <div id="camera-page-content">
+                    <h3>Top products</h3>
+                    <ul>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Product 1</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-      <div class="camera-img">
-        
-          <img src="img/camera2.jpg" alt="Camera 2" width="250" height="250">
-        
-        <div class="desc">Nikon D3300<br>Price:$800</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
-
-      <div class="camera-img">
-        
-          <img src="img/camera3.jpg" alt="Camera 3" width="250" height="250">
-        
-        <div class="desc">EOS 5D Mark III EF 24-70mm f/4L IS USM Lens Kit<br>Price:$580</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:85%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-       
-          <img src="img/camera4.jpg" alt="Camera 4" width="250" height="250">
-        
-        <div class="desc">EOS Rebel T5 EF-S 18-55mm IS II Lens Kit<br>Price:$780</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:77%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/camera5.jpg" alt="Camera 5" width="300" height="250">
-        
-        <div class="desc">Nikon D300<br>Price:$640</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:35%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/eos t51.jpg" alt="Camera 6" width="300" height="250">
-        
-        <div class="desc">EOS T51<br>Price:$360</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/camera6.jpg" alt="Camera 7" width="300" height="250">
-        
-        <div class="desc">Nikon E330<br>Price:$600</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:10%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/eos-70d.jpg" alt="Camera 8" width="300" height="250">
-        
-        <div class="desc">EOS 70D<br>Price:$459</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:55%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/EOS-80D.jpg" alt="Camera 9" width="300" height="250">
-        
-        <div class="desc">EOS 80D<br>Price:$330</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:80%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/EOS-M3.jpg" alt="Camera 10" width="300" height="250">
-        
-        <div class="desc">EOS M3<br>Price:$500</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:50%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/eos-rebel.jpg" alt="Camera 11" width="300" height="250">
-       
-        <div class="desc">EOS REBEL<br>Price:$300</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:70%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX60.jpg" alt="Camera 12" width="300" height="250">
-        
-        <div class="desc">PowerShot-SX60<br>Price:$460</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX600.jpg" alt="Camera 13" width="300" height="250">
-       
-        <div class="desc">PowerShot-SX600<br>Price:$449</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:30%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX720.jpg" alt="Camera 14" width="300" height="250">
-        
-        <div class="desc">PowerShot-SX720<br>Price:$455</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:50%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX7410.jpg" alt="Camera 15" width="300" height="250">
-       
-        <div class="desc">PowerShot-SX7410<br>Price:$590</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
 </section>
+
 <footer>
       Copyright @University of Malaya
 </footer>

@@ -1,0 +1,103 @@
+.product {
+	width: 650px;
+	margin: auto;
+	padding: 25px 0px;
+}
+
+.clear:before,
+.clear:after {
+	content: "";
+	display: table; 
+}
+ 
+.clear:after { clear: both; }
+ 
+.clear { 
+	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+::-moz-selection {
+ 	color: inherit;
+ 	background-color: #eee;
+}
+::selection {
+ 	color: inherit;
+ 	background-color: #eee;
+}
+
+ 
+
+
+
+figure { float: left;
+
+}
+ 
+figure img { 
+	max-width: 350px;
+
+}
+
+section {
+	font-family: Tahoma, Arial, sans-serif;
+	line-height: 150%;
+	float: right;
+	width: 300px;
+	color: #333; 
+}
+ 
+button {
+	background: #36a9ea;
+	border: 1px solid #00599d;
+	color: #fff;
+	padding: 8px 20px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px 0px rgba(250, 250, 250, .3);
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px 0px rgba(250, 250, 250, .3);
+	text-shadow: 0px 1px 1px #156cc4;
+	filter: dropshadow(color=#156cc4, offx=0, offy=1);
+	font-size: 10pt; }
+ 
+	button:hover {
+		background: #2f90d5;
+		background: -moz-linear-gradient(top, #2f90d5 0%, #0351b7 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f90d5), color-stop(100%,#0351b7));
+		background: -webkit-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		background: -o-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		background: -ms-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		background: linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2f90d5', endColorstr='#0351b7',GradientType=0 ); }
+ 
+	button:active {
+		background: #127fd2;
+		-webkit-box-shadow: inset 0px 2px 1px 0px rgba(0, 47, 117, .5), 0px 1px 1px 0px rgba(0, 0, 0, 0);
+		box-shadow: inset 0px 2px 1px 0px rgba(0, 47, 117, .5), 0px 1px 1px 0px rgba(0, 0, 0, 0); }
+
+ 
+details { margin: 20px 0px; }
+ 
+summary {
+	cursor: pointer;
+	font-size: 12pt;
+	outline: 0; }
+ 
+details > summary::-webkit-details-marker { display: none; }
+ 
+details > summary:before {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	content: '' !important;
+	background: url('../images/plus-min.png') no-repeat center top;
+	margin-right: 5px;
+	position: relative;
+	top: 2px; }
+ 
+details[open] > summary:before,
+details.open > summary:before { 
+	background: url('../images/plus-min.png') no-repeat center bottom; 
+}
+figure {
+    margin: 0;
+}
