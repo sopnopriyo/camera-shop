@@ -5,9 +5,10 @@ html,
             margin: 0px;
             border: 0;
             display: block;  /* No floating content on sides */
+            background-color: #66CC99;
 }
 header {
-    background-color:black;
+    background-color: #66CC99;
     color:white;
     text-align:center;
     padding:5px;     
@@ -15,12 +16,15 @@ header {
 
 #top-main-nav ul {
     line-height:30px;
-    background-color:#eeeeee;
+    background-color: #F5F5F5;
     height:35px;
     margin:0;
     overflow: visible;
     padding-left: 5%;
     padding-right: 5%
+    color:#301F22;
+    font-family: tahoma;
+
         
 }
 #top-main-nav ul li{
@@ -39,14 +43,16 @@ header {
 
 #top-main-nav ul li.right {
  float:right;
+ padding-right: 10px;
 }
 footer {
-    background-color:black;
+    background-color: #332225;
     color:white;
     clear:both;
     text-align:center;
     margin-top:1%;
     height: 30px; 
+    font-family: tahoma;
 
 }
 /*
@@ -54,25 +60,28 @@ Home Page start
 */
 
 #search-nav{
-    background-color: #A9A9A9;
+    background-color: #FF7800;
     overflow: visible;
+    font-family: tahoma;
 }
 
 
 #sidebar{
-    background-color: #ddd ;
+    background-color: #F5F5F5 ;
     float: left;
     width: 20%;
-    height: 98%;
+    height: 45%;
     padding-left: 10px;
     margin-top: 10px;
     margin-left: 2%;
     margin-right: 1%;
     border: 1px solid #E9E9E9;
+
     
 }
 #sidebar ul{
     list-style-type: none;
+     font-family: tahoma;
 }
 .sidenav {
     list-style-type: none;
@@ -103,11 +112,12 @@ Home Page start
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #ddd;
+    background-color: #66CC99;
     width: 70%;
     margin-top: 10px;
     padding-bottom: 30px;
     border: 1px solid #E9E9E9;
+     font-family: tahoma;
 }
 
 
@@ -128,11 +138,13 @@ Home Page start
     font-weight: bold;
     line-height: 15px;
     padding: 11px 0 12px 20px;
+    padding-top: -10px;
     text-transform: uppercase;
 }
 
 #homepage-content ul{
     list-style-type: none;
+     font-family: tahoma;
 }
 
 
@@ -142,8 +154,9 @@ Home Page start
     width: 23%;
     background-color: #fbfbfb;
     border-radius:25px; 
-    border: 2px solid #73AD21;
+    border: 2px solid #FF7800;
     margin: 5px;
+     font-family: tahoma;
 }
 
 
@@ -179,7 +192,7 @@ Home Page start
 }
 
 #homepage-content ul li .info .price {
-    background: none repeat scroll 0 0 #9999FF;
+    background: none repeat scroll 0 0 #66CC99;
     color: black;
     text-align: center;
     font-size: 12px;
@@ -193,6 +206,7 @@ Home Page start
     font-size: 11px;
     line-height: 16px;
     margin-right: 3px;
+     font-family: tahoma;
 }
 
 #homepage-content ul li .info .actions {
@@ -219,15 +233,16 @@ Camera Page Start
 */
 
 #camera-page-sidebar{
-    background-color: #ddd ;
+    background-color: #F5F5F5 ;
     float: left;
     width: 20%;
-    height: 98%;
+    height: 45%;
     padding-left: 10px;
     margin-top: 10px;
     margin-left: 2%;
     margin-right: 1%;
     border: 1px solid #E9E9E9;
+     font-family: tahoma;
     
 }
 #camera-page-sidebar ul{
@@ -261,7 +276,7 @@ Camera Page Start
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #ddd;
+    background-color: #66CC99;
     width: 70%;
     margin-top: 10px;
     padding-bottom: 30px;
@@ -287,10 +302,12 @@ Camera Page Start
     line-height: 15px;
     padding: 11px 0 12px 20px;
     text-transform: uppercase;
+     font-family: tahoma;
 }
 
 #camera-page-content ul{
     list-style-type: none;
+     font-family: tahoma;
 }
 
 
@@ -300,7 +317,7 @@ Camera Page Start
     width: 23%;
     background-color: #fbfbfb;
     border-radius:25px; 
-    border: 2px solid #73AD21;
+    border: 2px solid #FF7800;
     margin: 5px;
 }
 
@@ -337,7 +354,7 @@ Camera Page Start
 }
 
 #camera-page-content ul li .info .price {
-    background: none repeat scroll 0 0 #9999FF;
+    background: none repeat scroll 0 0 #66CC99;
     color: black;
     text-align: center;
     font-size: 12px;
@@ -377,19 +394,21 @@ accesories Page Start
 */
 
 #accesories-page-sidebar{
-    background-color: #ddd ;
+    background-color: #F5F5F5 ;
     float: left;
     width: 20%;
-    height: 98%;
+    height: 45%;
     padding-left: 10px;
     margin-top: 10px;
     margin-left: 2%;
     margin-right: 1%;
     border: 1px solid #E9E9E9;
+     font-family: tahoma;
     
 }
 #accesories-page-sidebar ul{
     list-style-type: none;
+     font-family: tahoma;
 }
 .accesories-page-sidenav {
     list-style-type: none;
@@ -397,6 +416,7 @@ accesories Page Start
     padding: 0;
     height: 100%;
     overflow: auto;
+     font-family: tahoma;
 }
 
 .accesories-page-sidenav li a {
@@ -419,11 +439,12 @@ accesories Page Start
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #ddd;
+    background-color: #F5F5F5;
     width: 70%;
     margin-top: 10px;
     padding-bottom: 30px;
     border: 1px solid #E9E9E9;
+     font-family: tahoma;
 }
 
 
@@ -445,6 +466,7 @@ accesories Page Start
     line-height: 15px;
     padding: 11px 0 12px 20px;
     text-transform: uppercase;
+     font-family: tahoma;
 }
 
 #accesories-page-content ul{
@@ -458,7 +480,7 @@ accesories Page Start
     width: 23%;
     background-color: #fbfbfb;
     border-radius:25px; 
-    border: 2px solid #73AD21;
+    border: 2px solid #FF7800;
     margin: 5px;
 }
 
@@ -495,7 +517,7 @@ accesories Page Start
 }
 
 #accesories-page-content ul li .info .price {
-    background: none repeat scroll 0 0 #9999FF;
+    background: none repeat scroll 0 0 #66CC99;
     color: black;
     text-align: center;
     font-size: 12px;
@@ -503,6 +525,7 @@ accesories Page Start
     line-height: 16px;
     margin: 17px 0 10px;
     padding: 6px 0 6px 8px;
+     font-family: tahoma;
 }
 #accesories-page-content ul li .info .price .st {
     color: #FF0000;
@@ -539,7 +562,8 @@ About Us Page Start
 
 #about-us-section{
     margin: 1%;
-    background-color:#736565;
+    background-color:#66CC99;
+     font-family: tahoma;
 }
 
 
@@ -557,6 +581,9 @@ contact Us Page Start
     width:100%;
     margin:0 auto;
     position: relative; 
+
+    
+    
 }
 #contact-us-form h2 {
 
@@ -564,6 +591,8 @@ contact Us Page Start
     display: block;
     font-size: 30px;
     font-weight: 400;
+     font-family: tahoma;
+     
 }
 
 #contact-us-form fieldset {
@@ -581,6 +610,7 @@ contact Us Page Start
     background:#FFF;
     margin:0 0 5px;
     padding:10px;
+     font-family: tahoma;
 }
 
 #contact-us-form textarea {
@@ -588,14 +618,15 @@ contact Us Page Start
     height:100px;
     max-width:100%;
     resize:none;
+     font-family: tahoma;
 }
 
 #contact-us-form button[type="submit"] {
 
     cursor:pointer;
-    width:520px;
+    width:500px;
     border: none;
-    background:#66CC99;
+    background: #663399;
     color:#FFF;
     margin:0;
     padding:10px;
@@ -619,6 +650,7 @@ Customer Profile Start
 
 /* For visibility. Delete me */
 border: 1px solid red;
+background-color: #FFF5EB;
 }
 
 
