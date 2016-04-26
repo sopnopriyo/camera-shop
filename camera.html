@@ -10,184 +10,445 @@
 
 <header>
 <title>Marvel Camera Shop</title>
-<h1>CAMERA GALLERY</h1>
-
-
+<img src="img/marvel.png" alt="logo">
 </header>
 
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="camera.html">Camera</a> |
-  <a href="accesories.html">Accesories</a> |
-  <a href="about-us.html">About Us</a> |
-  <a href="contact-us.html">Contact Us</a>
-  
-  <div id="right-nav">
-       <a href="#"> <img src="img/user-icon.png"  height="30px" width="30px"> Your Account</a>
-       <a href="#"> <img src="img/cart-icon.png"  height="30px" width="30px"> Cart</a>
-  </div>
- 
+<nav id="top-main-nav">
+   <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="camera.html">Camera</a> </li>
+        <li><a href="accesories.html">Accesories</a> </li>
+        <li><a href="about-us.html">About Us</a> </li>
+        <li><a href="contact-us.html">Contact Us</a> </li>
+          <li><a href="sitemap.html">Sitemap</a> </li>
+        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
+        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
+    </ul>
+
 </nav>
-<section id="camera-main">
-      <div class="camera-img">
+<nav id="search-nav">
+  <center>
+    <form method="post" action="search-result.html">
+      <input type="text" name="keyword" placeholder="Type an item">
+      <select>
+        <option value="camera">Camera</option>
+        <option value="lense">Lenses</option>
+        <option value="accesories">Accesories</option>
+        <option value="mercedes">Others</option>
+      </select>
+      <button type="submit" name="search">Search</button>
+    </form>
+  </center> 
+</nav>
 
-          <img src="img/camera1.jpg" alt="Camera 1" width="250" height="250">
-        
-        <div class="desc">EOS 6D EF 24-105mm f/4L IS USM Lens Kit<br>Price:$500</div>
-      <div class='rating_bar'>
-          <div  class='rating' style='width:60%;'>
+<aside id="camera-page-sidebar">
+<h1 style="color: #FF7800">Categories</h1>
 
-          </div>
-      </div>
-      <div class="actions">
-              <a href="#">Details</a>
-              <a  class="add-to-cart" href="#" data-name="camera" data-price="50">Add to cart</a>
-         </div>
-      </div>
+    <nav>
+       <ul class="camera-page-sidenav">
+           <li> <a href="dslr.html">DSLR</a></li>
+            <li> <a href="digital-camera.html">Digital Camera</a></li>
+            <li> <a href="camrecorder.html">Camrecorder</a></li>
+            <li> <a href="dslr.html">Broadcast Camera</a></li>
+       </ul> 
+    </nav>
+</aside>
 
+<section id="camera-contents">
+   <div id="camera-page-content">
+                    <h3>Top products</h3>
+                    <ul>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera1.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Canon DX-56 VR II Lens</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$550.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="img"><a href="#"><img alt="" src="img/eos t51.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Eos T-51</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$750.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/eos-70d.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Eos 70-D</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$579.40</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/EOS-80D.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Eos 80-D</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$499.99</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/EOS-M3.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">EOS M-3</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$679.70</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/eos-rebel.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Eos Rebel</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$750.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/c1.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Nikon D7200 DSLR</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$770.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/c2.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Nikon D7100 DSLR </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$735.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
 
-      <div class="camera-img">
-        
-          <img src="img/camera2.jpg" alt="Camera 2" width="250" height="250">
-        
-        <div class="desc">Nikon D3300<br>Price:$800</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
+                         <li>
+                            <div class="img"><a href="#"><img alt="" src="img/c3.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Nikon D5500 DSLR </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$549.95</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/c4.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Nikon D3300 DSLR</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$349.95</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/c5.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Canon EOS 5D Mark III</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$3009.90</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/c6.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Canon EOS 5D Mark III</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$2249.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera2.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Nikon AD-3</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$779.90</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera3.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Canon Mark 9-D</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$2110.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+ <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera4.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Canon CC-69</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$1120.95</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera5.jpg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Nikon Frans 78</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$950.50</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/camera6.jpg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Nikon Fr-60D</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$1150.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f1.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$250.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f2.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$230.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f3.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Canon Digital IXUS</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$350.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f4.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Canon Digital IXUS</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$350.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f5.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$330.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f6.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Canon Digital IXUS 160 </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$270.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f7.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Canon Digital IXUS 275 </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$400.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f8.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Nikon Coolpix S7000 </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$470.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/f9.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$600.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+ <li>
+                            <div class="img"><a href="#"><img alt="" src="img/r1.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Sony HDR-CX405 </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$1050.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/r2.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">GoPro Hero+ LCD Sports </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$1011.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/r3.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">IRB W9-SJ4000 W9 WIFI </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$350.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/r5.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">Panasonic Standard HC</a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$850.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/r6.jpeg"></a></div>
+                            <div class="info">
+                               <a class="title" href="product-details.html">GoPro Hero4-CHDHX-401 </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$2050.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img"><a href="#"><img alt="" src="img/r7.jpeg"></a></div>
+                            <div class="info">
+                                <a class="title" href="product-details.html">Sony HDR-PJ410 </a>
+                                <div class="price">
+                                    <span class="st">Our price:</span><strong>$1150.00</strong>
+                                </div>
+                                <div class="actions">
+                                    <a href="product-details.html">Details</a>
+                                </div>
+                            </div>
+                        </li>
 
-      <div class="camera-img">
-        
-          <img src="img/camera3.jpg" alt="Camera 3" width="250" height="250">
-        
-        <div class="desc">EOS 5D Mark III EF 24-70mm f/4L IS USM Lens Kit<br>Price:$580</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:85%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-       
-          <img src="img/camera4.jpg" alt="Camera 4" width="250" height="250">
-        
-        <div class="desc">EOS Rebel T5 EF-S 18-55mm IS II Lens Kit<br>Price:$780</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:77%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/camera5.jpg" alt="Camera 5" width="300" height="250">
-        
-        <div class="desc">Nikon D300<br>Price:$640</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:35%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/eos t51.jpg" alt="Camera 6" width="300" height="250">
-        
-        <div class="desc">EOS T51<br>Price:$360</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/camera6.jpg" alt="Camera 7" width="300" height="250">
-        
-        <div class="desc">Nikon E330<br>Price:$600</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:10%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/eos-70d.jpg" alt="Camera 8" width="300" height="250">
-        
-        <div class="desc">EOS 70D<br>Price:$459</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:55%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/EOS-80D.jpg" alt="Camera 9" width="300" height="250">
-        
-        <div class="desc">EOS 80D<br>Price:$330</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:80%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/EOS-M3.jpg" alt="Camera 10" width="300" height="250">
-        
-        <div class="desc">EOS M3<br>Price:$500</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:50%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/eos-rebel.jpg" alt="Camera 11" width="300" height="250">
-       
-        <div class="desc">EOS REBEL<br>Price:$300</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:70%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX60.jpg" alt="Camera 12" width="300" height="250">
-        
-        <div class="desc">PowerShot-SX60<br>Price:$460</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX600.jpg" alt="Camera 13" width="300" height="250">
-       
-        <div class="desc">PowerShot-SX600<br>Price:$449</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:30%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX720.jpg" alt="Camera 14" width="300" height="250">
-        
-        <div class="desc">PowerShot-SX720<br>Price:$455</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:50%;'>
-          </div>
-      </div>
-      </div>
-      <div class="camera-img">
-        
-          <img src="img/PowerShot-SX7410.jpg" alt="Camera 15" width="300" height="250">
-       
-        <div class="desc">PowerShot-SX7410<br>Price:$590</div>
-        <div class='rating_bar'>
-          <div  class='rating' style='width:90%;'>
-          </div>
-      </div>
-      </div>
+                    </ul>
+                </div>
+
 </section>
+
 <footer>
       Copyright @University of Malaya
 </footer>
