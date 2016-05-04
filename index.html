@@ -162,6 +162,15 @@
 <footer>
       Copyright @University of Malaya
 </footer>
-
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+      $('#top-main-nav ul li ').click(function(e) {
+        e.preventDefault();
+        $('a').removeClass('active');
+        $(this).addClass('active');
+    });
+        
+    });
+</script>
 </body>
 </html>
