@@ -18,6 +18,8 @@ sec_session_start();
  		
 </header>
 <?php if (login_check($mysqli) == true) : ?>
+
+
 <nav id="dashboard-nav">
 	<ul>
 		<li><a href="product.php"> Product </a></li>
@@ -36,19 +38,43 @@ sec_session_start();
 	</ul>
 </nav>
 
+
 <section id="dashboard-main">
 		<h2>Colored Table Header</h2>
 		<p><a href="addCatagory.php">Add Catagory</a></p>
+		<?php 
 
+			if(empty($successMessage)){
+				
+			}
+			else
+			{
+				echo "Record has been added Succesfully";
+			}
+		?>
+		<p></p>
 	<table>
 	  	<tr>
 	    	<th>Sr. No</th>
 	    	<th>Catagory Name</th>
 	    </tr>
-	  	<tr>
-	    	<td>1</td>
-	    	<td>Griffin</td>
-	   	</tr>
+			<?php 
+				$sql = "SELECT id, name  FROM catagory";
+				$result = $mysqli->query($sql);
+
+				if ($result->num_rows > 0) {
+			   		//var_dump($row)
+
+			   		while($row = mysqli_fetch_array($result))
+		          	{
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] . "</td></tr>"; 
+		          	}
+			    
+				} 
+				else {
+			    	echo "No result found";
+				}
+		  ?>
 	  
   </table>
 </section>
