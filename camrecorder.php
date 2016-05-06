@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -46,11 +37,11 @@
 
     <nav>
        <ul class="camera-page-sidenav">
-          <li> <a href="dslr.html">DSLR</a></li>
-            <li> <a href="digital-camera.html">Digital Camera</a></li>
-            <li> <a href="camrecorder.html">Camrecorder</a></li>
-            <li> <a href="dslr.html">Broadcast Camera</a></li>
-       </ul> 
+            <li> <a href="dslr.php">DSLR</a></li>
+            <li> <a href="digital-camera.php">Digital Camera</a></li>
+            <li> <a href="camrecorder.php">Camrecorder</a></li>
+            <li> <a href="dslr.php">Broadcast Camera</a></li>
+        </ul> 
     </nav>
 </aside>
 
@@ -62,12 +53,12 @@
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/r1.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Sony HDR-CX405 </a>
+                                <a class="title" href="product-details.php">Sony HDR-CX405 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$1050.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
@@ -75,12 +66,12 @@
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/r5.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Panasonic Standard HC</a>
+                               <a class="title" href="product-details.php">Panasonic Standard HC</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$850.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
@@ -88,12 +79,12 @@
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/r7.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Sony HDR-PJ410 </a>
+                                <a class="title" href="product-details.php">Sony HDR-PJ410 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$1150.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>

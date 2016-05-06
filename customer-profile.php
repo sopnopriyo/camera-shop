@@ -10,19 +10,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-       <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <body>
 
 <style type="text/css">

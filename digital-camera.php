@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -46,11 +37,11 @@
 
     <nav>
        <ul class="camera-page-sidenav">
-          <li> <a href="dslr.html">DSLR</a></li>
-            <li> <a href="digital-camera.html">Digital Camera</a></li>
-            <li> <a href="camrecorder.html">Camrecorder</a></li>
-            <li> <a href="dslr.html">Broadcast Camera</a></li>
-       </ul> 
+            <li> <a href="dslr.php">DSLR</a></li>
+            <li> <a href="digital-camera.php">Digital Camera</a></li>
+            <li> <a href="camrecorder.php">Camrecorder</a></li>
+            <li> <a href="dslr.php">Broadcast Camera</a></li>
+        </ul> 
     </nav>
 </aside>
 
@@ -62,96 +53,96 @@
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f1.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                               <a class="title" href="product-details.php">Sony Cyber-shot DSC</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$250.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f2.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                               <a class="title" href="product-details.php">Sony Cyber-shot DSC</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$230.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f3.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Canon Digital IXUS</a>
+                                <a class="title" href="product-details.php">Canon Digital IXUS</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$350.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                          <li>
                             <div class="img"><a href="#"><img alt="" src="img/f4.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Canon Digital IXUS</a>
+                                <a class="title" href="product-details.php">Canon Digital IXUS</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$350.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f5.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Sony Cyber-shot DSC</a>
+                                <a class="title" href="product-details.php">Sony Cyber-shot DSC</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$330.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f6.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Canon Digital IXUS 160 </a>
+                               <a class="title" href="product-details.php">Canon Digital IXUS 160 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$270.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f7.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Canon Digital IXUS 275 </a>
+                               <a class="title" href="product-details.php">Canon Digital IXUS 275 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$400.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="img/f8.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Nikon Coolpix S7000 </a>
+                               <a class="title" href="product-details.php">Nikon Coolpix S7000 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$470.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
