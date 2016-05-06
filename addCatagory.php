@@ -37,7 +37,7 @@ sec_session_start();
 </nav>
 
 <section id="dashboard-main">
-<h1>London</h1>
+
 
 
 <footer>

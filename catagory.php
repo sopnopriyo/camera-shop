@@ -37,8 +37,21 @@ sec_session_start();
 </nav>
 
 <section id="dashboard-main">
-<h1>London</h1>
+		<h2>Colored Table Header</h2>
+		<p><a href="addCatagory.php">Add Catagory</a></p>
 
+	<table>
+	  	<tr>
+	    	<th>Sr. No</th>
+	    	<th>Catagory Name</th>
+	    </tr>
+	  	<tr>
+	    	<td>1</td>
+	    	<td>Griffin</td>
+	   	</tr>
+	  
+  </table>
+</section>
 
 <footer>
 Copyright © W3Schools.com
