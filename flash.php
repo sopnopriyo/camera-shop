@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -45,13 +36,13 @@
 <h1 style="color: #FF7800">Categories</h1>
 
     <nav>
-       <ul class="sidenav">
-            <li> <a href="lense.html">Lense</a></li>
-            <li> <a href="flash.html">Flash</a></li>
-            <li> <a href="tripod.html">Tripod</a></li>
-            <li> <a href="memorycard.html">Memory Card</a></li>
-            <li> <a href="bagcase.html">Bag and Case</a></li>
-            <li> <a href="accesories.html">Accesories</a></li>
+        <ul class="sidenav">
+            <li> <a href="lense.php">Lense</a></li>
+            <li> <a href="flash.php">Flash</a></li>
+            <li> <a href="tripod.php">Tripod</a></li>
+            <li> <a href="memorycard.php">Memory Card</a></li>
+            <li> <a href="bagcase.php">Bag and Case</a></li>
+            <li> <a href="accesories.php">Accesories</a></li>
        </ul> 
     </nav>
 </aside>
@@ -63,107 +54,107 @@
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F1.jpg"></a></div>
                                 <div class="info">
-                                    <a class="title" href="product-details.html">Nikon - SB-700 AF </a>
+                                    <a class="title" href="product-details.php">Nikon - SB-700 AF </a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$230.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F2.jpg"></a></div>
                                 <div class="info">
-                                   <a class="title" href="product-details.html">Canon - Speedlite 430EX III</a>
+                                   <a class="title" href="product-details.php">Canon - Speedlite 430EX III</a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$310.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F3.jpg"></a></div>
                                 <div class="info">
-                                   <a class="title" href="product-details.html">Insigniaâ„¢ - TTL </a>
+                                   <a class="title" href="product-details.php">Insigniaâ„¢ - TTL </a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$370.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F4.jpg"></a></div>
                                 <div class="info">
-                                   <a class="title" href="product-details.html">Canon - Speedlite 270EX II </a>
+                                   <a class="title" href="product-details.php">Canon - Speedlite 270EX II </a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$290.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F5.jpg"></a></div>
                                 <div class="info">
-                                    <a class="title" href="product-details.html">Canon - Speedlite 600EX-RT </a>
+                                    <a class="title" href="product-details.php">Canon - Speedlite 600EX-RT </a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$340.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li><li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F6.jpg"></a></div>
                                 <div class="info">
-                                    <a class="title" href="product-details.html">Insigniaâ„¢ - TTL </a>
+                                    <a class="title" href="product-details.php">Insigniaâ„¢ - TTL </a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$405.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                            <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F7.jpg"></a></div>
                                 <div class="info">
-                                    <a class="title" href="product-details.html">Insigniaâ„¢ - Mini Flash Diffuser</a>
+                                    <a class="title" href="product-details.php">Insigniaâ„¢ - Mini Flash Diffuser</a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$440.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F8.jpg"></a></div>
                                 <div class="info">
-                                    <a class="title" href="product-details.html">Sunpak - DigiFlash 3000 </a>
+                                    <a class="title" href="product-details.php">Sunpak - DigiFlash 3000 </a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$270.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="img"><a href="#"><img alt="" src="acc/F9.jpg"></a></div>
                                 <div class="info">
-                                    <a class="title" href="product-details.html">Insigniaâ„¢ - Flash Diffuser 12 x 8</a>
+                                    <a class="title" href="product-details.php">Insigniaâ„¢ - Flash Diffuser 12 x 8</a>
                                     <div class="price">
                                         <span class="st">Our price:</span><strong>$490.00</strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.html">Details</a>
+                                        <a href="product-details.php">Details</a>
                                     </div>
                                 </div>
                             </li>

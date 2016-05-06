@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -45,13 +36,13 @@
 <h1 style="color: #FF7800">Categories</h1>
 
     <nav>
-       <ul class="sidenav">
-            <li> <a href="lense.html">Lense</a></li>
-            <li> <a href="flash.html">Flash</a></li>
-            <li> <a href="tripod.html">Tripod</a></li>
-            <li> <a href="memorycard.html">Memory Card</a></li>
-            <li> <a href="bagcase.html">Bag and Case</a></li>
-            <li> <a href="accesories.html">Accesories</a></li>
+        <ul class="sidenav">
+            <li> <a href="lense.php">Lense</a></li>
+            <li> <a href="flash.php">Flash</a></li>
+            <li> <a href="tripod.php">Tripod</a></li>
+            <li> <a href="memorycard.php">Memory Card</a></li>
+            <li> <a href="bagcase.php">Bag and Case</a></li>
+            <li> <a href="accesories.php">Accesories</a></li>
        </ul> 
     </nav>
 </aside>
@@ -63,119 +54,119 @@
                           <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T1.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Manfrotto Compact </a>
+                                <a class="title" href="product-details.php">Manfrotto Compact </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$350.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T2.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Tecno Selfie Stick</a>
+                                <a class="title" href="product-details.php">Tecno Selfie Stick</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$100.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T3.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Velbon EF-44 Tripod</a>
+                                <a class="title" href="product-details.php">Velbon EF-44 Tripod</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$209.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T4.jpg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Manfrotto 190GO!</a>
+                               <a class="title" href="product-details.php">Manfrotto 190GO!</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$304.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T5.jpg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Manfrotto 391RC2 </a>
+                               <a class="title" href="product-details.php">Manfrotto 391RC2 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$205.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T6.jpg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Manfrotto Befree Co. </a>
+                               <a class="title" href="product-details.php">Manfrotto Befree Co. </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$570.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T7.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Manfrotto Pixi Mini </a>
+                                <a class="title" href="product-details.php">Manfrotto Pixi Mini </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$369.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li><li>
                             <div class="img"><a href="#"><img alt="" src="acc/T8.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Manfrotto Compact Li. </a>
+                                <a class="title" href="product-details.php">Manfrotto Compact Li. </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$409.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                        <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T9.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Manfrotto 055XPRO3 3</a>
+                                <a class="title" href="product-details.php">Manfrotto 055XPRO3 3</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$390.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/T10.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Steadicam Curve</a>
+                                <a class="title" href="product-details.php">Steadicam Curve</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$376.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>

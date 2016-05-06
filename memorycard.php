@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -45,13 +36,13 @@
 <h1 style="color: #FF7800">Categories</h1>
 
     <nav>
-       <ul class="sidenav">
-            <li> <a href="lense.html">Lense</a></li>
-            <li> <a href="flash.html">Flash</a></li>
-            <li> <a href="tripod.html">Tripod</a></li>
-            <li> <a href="memorycard.html">Memory Card</a></li>
-            <li> <a href="bagcase.html">Bag and Case</a></li>
-            <li> <a href="accesories.html">Accesories</a></li>
+        <ul class="sidenav">
+            <li> <a href="lense.php">Lense</a></li>
+            <li> <a href="flash.php">Flash</a></li>
+            <li> <a href="tripod.php">Tripod</a></li>
+            <li> <a href="memorycard.php">Memory Card</a></li>
+            <li> <a href="bagcase.php">Bag and Case</a></li>
+            <li> <a href="accesories.php">Accesories</a></li>
        </ul> 
     </nav>
 </aside>
@@ -63,95 +54,95 @@
                           <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d1.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">SanDisk Ultra 16 GB </a>
+                               <a class="title" href="product-details.php">SanDisk Ultra 16 GB </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$30.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d2.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Samsung 16 GB </a>
+                               <a class="title" href="product-details.php">Samsung 16 GB </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$30.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d3.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">SanDisk 8 GB SDHC </a>
+                               <a class="title" href="product-details.php">SanDisk 8 GB SDHC </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$23.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d4.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">SanDisk Ultra 32 GB </a>
+                                <a class="title" href="product-details.php">SanDisk Ultra 32 GB </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$40.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li><li>
                             <div class="img"><a href="#"><img alt="" src="acc/d5.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Sony 32 GB SDHC</a>
+                                <a class="title" href="product-details.php">Sony 32 GB SDHC</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$40.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                        <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d6.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Sony 4 GB SDHC </a>
+                                <a class="title" href="product-details.php">Sony 4 GB SDHC </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$15.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d7.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Transcend 32 GB SDHC </a>
+                                <a class="title" href="product-details.php">Transcend 32 GB SDHC </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$40.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/d8.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Kingston UHS-I 32 GB SDHC </a>
+                                <a class="title" href="product-details.php">Kingston UHS-I 32 GB SDHC </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$40.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>

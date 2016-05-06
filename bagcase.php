@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -45,13 +36,13 @@
 <h1 style="color: #FF7800">Categories</h1>
 
     <nav>
-       <ul class="sidenav">
-            <li> <a href="lense.html">Lense</a></li>
-            <li> <a href="flash.html">Flash</a></li>
-            <li> <a href="tripod.html">Tripod</a></li>
-            <li> <a href="memorycard.html">Memory Card</a></li>
-            <li> <a href="bagcase.html">Bag and Case</a></li>
-            <li> <a href="accesories.html">Accesories</a></li>
+          <ul class="sidenav">
+            <li> <a href="lense.php">Lense</a></li>
+            <li> <a href="flash.php">Flash</a></li>
+            <li> <a href="tripod.php">Tripod</a></li>
+            <li> <a href="memorycard.php">Memory Card</a></li>
+            <li> <a href="bagcase.php">Bag and Case</a></li>
+            <li> <a href="accesories.php">Accesories</a></li>
        </ul> 
     </nav>
 </aside>
@@ -63,149 +54,149 @@
                           <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b1.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Nikon Coolpix Soft-3 </a>
+                               <a class="title" href="product-details.php">Nikon Coolpix Soft-3 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$70.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b2.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Nikon DSLR Camera Bag </a>
+                               <a class="title" href="product-details.php">Nikon DSLR Camera Bag </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$57.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b3.jpeg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Nikon Camera Bag</a>
+                               <a class="title" href="product-details.php">Nikon Camera Bag</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$63.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b4.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">E-VOGUE CBRT1 DSLR </a>
+                                <a class="title" href="product-details.php">E-VOGUE CBRT1 DSLR </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$83.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                          <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b5.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Sony Camera Bag</a>
+                                <a class="title" href="product-details.php">Sony Camera Bag</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$59.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                          <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b6.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Canon EOS Camera Bag</a>
+                                <a class="title" href="product-details.php">Canon EOS Camera Bag</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$59.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b7.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">EasyCover Camera Case </a>
+                                <a class="title" href="product-details.php">EasyCover Camera Case </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$39.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b8.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">EasyCover Camera Case </a>
+                                <a class="title" href="product-details.php">EasyCover Camera Case </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$39.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b9.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Lowepro Camera Bag</a>
+                                <a class="title" href="product-details.php">Lowepro Camera Bag</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$209.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b10.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Lowepro Tahoe BP 150 </a>
+                                <a class="title" href="product-details.php">Lowepro Tahoe BP 150 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$270.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b11.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">EasyCover Camera Case </a>
+                                <a class="title" href="product-details.php">EasyCover Camera Case </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$39.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b12.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Lowepro Rezo TLZ 10 </a>
+                                <a class="title" href="product-details.php">Lowepro Rezo TLZ 10 </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$109.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li> <li>
                             <div class="img"><a href="#"><img alt="" src="acc/b13.jpeg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Lowepro Toploader Zoom </a>
+                                <a class="title" href="product-details.php">Lowepro Toploader Zoom </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$109.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>

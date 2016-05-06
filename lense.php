@@ -13,19 +13,10 @@
 <img src="img/marvel.png" alt="logo">
 </header>
 
-<nav id="top-main-nav">
-   <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="camera.html">Camera</a> </li>
-        <li><a href="accesories.html">Accesories</a> </li>
-        <li><a href="about-us.html">About Us</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
-          <li><a href="sitemap.html">Sitemap</a> </li>
-        <li class="right"> <a href="customer-profile.html"> <img src="img/user-icon.png"  height="20px" width="20px"> Your Account</a></li>
-        <li class="right"> <a href="shopping-cart.html"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart</a></li>
-    </ul>
+<?php 
 
-</nav>
+    include('main-menu.php')
+?>
 <nav id="search-nav">
   <center>
     <form method="post" action="search-result.html">
@@ -45,13 +36,13 @@
 <h1 style="color: #FF7800">Categories</h1>
 
     <nav>
-       <ul class="sidenav">
-            <li> <a href="lense.html">Lense</a></li>
-            <li> <a href="flash.html">Flash</a></li>
-            <li> <a href="tripod.html">Tripod</a></li>
-            <li> <a href="memorycard.html">Memory Card</a></li>
-            <li> <a href="bagcase.html">Bag and Case</a></li>
-            <li> <a href="accesories.html">Accesories</a></li>
+        <ul class="sidenav">
+            <li> <a href="lense.php">Lense</a></li>
+            <li> <a href="flash.php">Flash</a></li>
+            <li> <a href="tripod.php">Tripod</a></li>
+            <li> <a href="memorycard.php">Memory Card</a></li>
+            <li> <a href="bagcase.php">Bag and Case</a></li>
+            <li> <a href="accesories.php">Accesories</a></li>
        </ul> 
     </nav>
 </aside>
@@ -63,84 +54,84 @@
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L1.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Tamron 16-300mm</a>
+                                <a class="title" href="product-details.php">Tamron 16-300mm</a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$450.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                        <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L2.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Tamron SP 150-600mm </a>
+                                <a class="title" href="product-details.php">Tamron SP 150-600mm </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$800.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L3.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Tamron SP 150-600mm </a>
+                                <a class="title" href="product-details.php">Tamron SP 150-600mm </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$810.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L4.jpg"></a></div>
                             <div class="info">
-                                <a class="title" href="product-details.html">Tamron 16-300mm </a>
+                                <a class="title" href="product-details.php">Tamron 16-300mm </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$410.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L5.jpg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Tamron 18-270mm </a>
+                               <a class="title" href="product-details.php">Tamron 18-270mm </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$992.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L7.jpg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Canon EF 600mm </a>
+                               <a class="title" href="product-details.php">Canon EF 600mm </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$1099.00</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="img"><a href="#"><img alt="" src="acc/L8.jpg"></a></div>
                             <div class="info">
-                               <a class="title" href="product-details.html">Canon EF 800mm </a>
+                               <a class="title" href="product-details.php">Canon EF 800mm </a>
                                 <div class="price">
                                     <span class="st">Our price:</span><strong>$999.10</strong>
                                 </div>
                                 <div class="actions">
-                                    <a href="product-details.html">Details</a>
+                                    <a href="product-details.php">Details</a>
                                 </div>
                             </div>
                         </li>
