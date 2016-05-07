@@ -18,6 +18,8 @@ sec_session_start();
  		
 </header>
 <?php if (login_check($mysqli) == true) : ?>
+
+
 <nav id="dashboard-nav">
 	<ul>
 		<li><a href="product.php"> Product </a></li>
@@ -36,12 +38,49 @@ sec_session_start();
 	</ul>
 </nav>
 
+
 <section id="dashboard-main">
-<h1>London</h1>
-<p>London is the capital city of England. It is the most populous city in the United Kingdom,
-with a metropolitan area of over 13 million inhabitants.</p>
-<p>Standing on the River Thames, London has been a major settlement for two millennia,
-its history going back to its founding by the Romans, who named it Londinium.</p>
+		<h2>Colored Table Header</h2>
+		<p><a href="addProduct.php">Add Product</a></p>
+		<?php 
+
+			if(empty($successMessage)){
+				
+			}
+			else
+			{
+				echo $successMessage;
+			}
+		?>
+		<p></p>
+	<table>
+	  	<tr>
+	    	<th>Sr. No</th>
+	    	<th>Name</th>
+	    	<th>Stock Status</th>
+			<th>Catagory</th>
+			<th>Price</th>
+
+	    </tr>
+			<?php 
+				$sql = "SELECT p.id, p.name,p.price,p.stock_status, c.name as cat  FROM product p, catagory c where c.name =(select name from catagory where id = p.catagory_id)";
+				$result = $mysqli->query($sql);
+
+				if ($result->num_rows > 0) {
+			   		//var_dump($row)
+
+			   		while($row = mysqli_fetch_array($result))
+		          	{
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] . "</td></tr>"; 
+		          	}
+			    
+				} 
+				else {
+			    	echo "No result found";
+				}
+		  ?>
+	  
+  </table>
 </section>
 
 <footer>

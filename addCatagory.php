@@ -33,19 +33,21 @@ sec_session_start();
   			}
 
 
-  			$sql = "INSERT INTO catagory (name)
-			VALUES ('$name')";
+  			if (empty($nameErr)) {
+  				$sql = "INSERT INTO catagory (name)
+						VALUES ('$name') ";
 
-			if ($mysqli->query($sql) === TRUE) {
+					if ($mysqli->query($sql) === TRUE) {
 
-				$_SESSION["successMessage"] = "Record has been added Succesfully !";
+						//$_SESSION["successMessage"] = "Record has been added Succesfully !";
 
-					header('Location: ./catagory.php');
-                exit();
+						header('Location: ./catagory.php');
+                		exit();
 			    
-			} else {
-			    $nameErr = $conn->error;
-			}
+					} else {
+				    	$nameErr = $conn->error;
+					}
+  			}
   	}
 
 
@@ -88,7 +90,7 @@ sec_session_start();
 
 <section id="dashboard-main">
 
-<h2>PHP Form Validation Example</h2>
+<h2>Add a product catagory </h2>
 	<p><span class="error">* required field.</span></p>
 	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   		Name: <input type="text" name="name" value="<?php echo $name;?>">
@@ -103,7 +105,7 @@ sec_session_start();
 		
 	}
 	else {
-		echo "nameErr";
+		echo "Input error";
 	}
 ?>
 

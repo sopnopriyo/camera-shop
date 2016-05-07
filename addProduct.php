@@ -2,6 +2,7 @@
 include_once 'includes/db_connect.php';
 include_once 'includes/functions.php';
 
+
 sec_session_start();
 ?>
 
@@ -11,6 +12,7 @@ sec_session_start();
 <head>
       <link rel="stylesheet" href="styles/main.css" />
 </head>
+
 <body>
 
 <header id="dashboard-header">
@@ -18,8 +20,6 @@ sec_session_start();
  		
 </header>
 <?php if (login_check($mysqli) == true) : ?>
-
-
 <nav id="dashboard-nav">
 	<ul>
 		<li><a href="product.php"> Product </a></li>
@@ -38,46 +38,27 @@ sec_session_start();
 	</ul>
 </nav>
 
-
 <section id="dashboard-main">
-		<h2>Colored Table Header</h2>
-		<p><a href="addCatagory.php">Add Catagory</a></p>
-		<?php 
 
-			if(empty($successMessage)){
-				
-			}
-			else
-			{
-				echo $successMessage;
-			}
-		?>
-		<p></p>
-	<table>
-	  	<tr>
-	    	<th>Sr. No</th>
-	    	<th>Catagory Name</th>
-	    </tr>
-			<?php 
-				$sql = "SELECT id, name  FROM catagory ORDER BY id ASC";
-				$result = $mysqli->query($sql);
+<h2>create a form for add product</h2>
 
-				if ($result->num_rows > 0) {
-			   		//var_dump($row)
 
-			   		while($row = mysqli_fetch_array($result))
-		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] . "</td></tr>"; 
-		          	}
-			    
-				} 
-				else {
-			    	echo "No result found";
-				}
-		  ?>
-	  
-  </table>
+
+
+  
+<?php
+	if (empty($error)) {
+		
+	}
+	else {
+		echo "Input error";
+	}
+?>
+
+
+
 </section>
+
 
 <footer>
 Copyright © W3Schools.com
