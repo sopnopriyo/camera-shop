@@ -633,9 +633,7 @@
 
 </section>
 
-<footer>
-      Copyright @University of Malaya
-</footer>
+<?php include 'footer.php'; ?>
 
 </body>
 </html>

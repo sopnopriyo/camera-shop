@@ -70,15 +70,7 @@ sec_session_start();
  		
 </header>
 <?php if (login_check($mysqli) == true) : ?>
-<nav id="dashboard-nav">
-	<ul>
-		<li><a href="product.php"> Product </a></li>
-		<li><a href="catagory.php"> Catagory </a></li>
-		<li><a href="order.php" >Order</a></li>
-		<li><a href="message.php"> Message</a></li>
-		
-	</ul>
-</nav>
+<?php include('admin-nav.php'); ?>
 <nav id="dashboard-auth">
 	<ul>
 		<li><a href=""> Welcome <?php echo htmlentities($_SESSION['username']); ?>! </a></li>
@@ -114,9 +106,7 @@ sec_session_start();
 </section>
 
 
-<footer>
-Copyright © W3Schools.com
-</footer>
+<?php include 'footer.php'; ?>
         <?php else : ?>
             <p>
                 <span class="error">You are not authorized to access this page.</span> Please <a href="login.php">login</a>.

@@ -10,6 +10,13 @@ sec_session_start();
 <html>
 <head>
       <link rel="stylesheet" href="styles/main.css" />
+
+      <style>
+
+      #catagory-table {
+      	margin-left: 40px;
+      }
+      </style>
 </head>
 <body>
 
@@ -20,15 +27,7 @@ sec_session_start();
 <?php if (login_check($mysqli) == true) : ?>
 
 
-<nav id="dashboard-nav">
-	<ul>
-		<li><a href="product.php"> Product </a></li>
-		<li><a href="catagory.php"> Catagory </a></li>
-		<li><a href="order.php" >Order</a></li>
-		<li><a href="message.php"> Message</a></li>
-		
-	</ul>
-</nav>
+<?php include('admin-nav.php'); ?>
 <nav id="dashboard-auth">
 	<ul>
 		<li><a href=""> Welcome <?php echo htmlentities($_SESSION['username']); ?>! </a></li>
@@ -53,10 +52,11 @@ sec_session_start();
 			}
 		?>
 		<p></p>
-	<table>
+	<table id="catagory-table">
 	  	<tr>
 	    	<th>Sr. No</th>
 	    	<th>Catagory Name</th>
+	    	<th>Action</th>
 	    </tr>
 			<?php 
 				$sql = "SELECT id, name  FROM catagory ORDER BY id ASC";
@@ -67,7 +67,7 @@ sec_session_start();
 
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] . "</td></tr>"; 
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td> <td>"."<button> Edit</button> <button> Delete</button>"."</td></tr>"; 
 		          	}
 			    
 				} 
