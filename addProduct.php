@@ -106,9 +106,26 @@ sec_session_start();
          <input type="text" name="color" placeholder="Enter Producgt Color"/> <br>
          <input type="text" name="price" placeholder="Enter Producgt price"/> <br>
          <input type="text" name="stock_status" placeholder="Enter stock status"/> <br>
-         <input type="text" name="catagory_id" placeholder="Enter Producgt catagory"/> <br>
+
+         <select name="catagory_id">
+            <?php 
+            $sql = "SELECT id, name  FROM catagory ORDER BY id ASC";
+            $result = $mysqli->query($sql);
+
+            if ($result->num_rows > 0) {
+                  //var_dump($row)
+
+                  while($row = mysqli_fetch_array($result))
+                  {
+                      echo "<option value =\"".$row['id']."\">".$row['name']."</option>";
+                  }
+             
+            } 
+           
+        ?>
+      
+         </select> <br>
          <input type="text" name="description" placeholder="Enter Producgt desc"/> <br>
-        
          <input type="file" name="image" /><br>
          <input type="submit" name="product_data" />
       </form>
