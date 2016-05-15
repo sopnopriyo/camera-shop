@@ -47,7 +47,7 @@ sec_session_start();
       $price = $_POST['price'] ;
       $catagory_id = $_POST['catagory_id'] ;
       $description = $_POST['description'] ;
-
+      $quantity = $_POST['quantity'];
  
       
       if(isset($_FILES['image'])){
@@ -81,8 +81,8 @@ sec_session_start();
 
       }
 
-      $sql = "INSERT INTO product (name,price,image,color,stock_status,catagory_id,description)
-                  VALUES ('$name','$price','$image','$color','$stock_status','$catagory_id','$description') ";
+      $sql = "INSERT INTO product (name,price,image,color,quantity,stock_status,catagory_id,description)
+                  VALUES ('$name','$price','$image','$color','$quantity','$stock_status','$catagory_id','$description') ";
 
       if ($mysqli->query($sql) === TRUE) {
             echo ", done with database"; 
@@ -105,6 +105,7 @@ sec_session_start();
          <input type="text" name="name" placeholder="Enter Product Name "/> <br>
          <input type="text" name="color" placeholder="Enter Producgt Color"/> <br>
          <input type="text" name="price" placeholder="Enter Producgt price"/> <br>
+         <input type="text" name="quantity" placeholder="Enter Producgt quantity"/> <br>
          <select name="stock_status">
             <option value="In Stock">In stock</option>
             <option value="Out of Stock">Out of stock</option>

@@ -52,10 +52,12 @@ sec_session_start();
 	    	<th>Stock Status</th>
 			<th>Catagory</th>
 			<th>Price</th>
+			<th>Quantity</th>
+
 
 	    </tr>
 			<?php 
-				$sql = "SELECT p.id, p.name,p.price,p.stock_status, c.name as cat  FROM product p, catagory c where c.name =(select name from catagory where id = p.catagory_id)";
+				$sql = "SELECT p.id, p.name,p.price,p.stock_status, p.quantity ,c.name as cat  FROM product p, catagory c where c.name =(select name from catagory where id = p.catagory_id)";
 				$result = $mysqli->query($sql);
 
 				if ($result->num_rows > 0) {
@@ -63,7 +65,7 @@ sec_session_start();
 
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] . "</td></tr>"; 
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] ."</td><td>".$row['quantity']. "</td></tr>"; 
 		          	}
 			    
 				} 
