@@ -22,6 +22,7 @@
     	$tel = $_POST['tel'];
     	$message = $_POST['message'];
 
+    	$successMessage= "";
     	if(!empty($name) && !empty($email) && !empty($tel) && !empty($message)){
 
     		$sql = "INSERT INTO message (name,email,phone,message)
@@ -31,8 +32,9 @@
 
 						//$_SESSION["successMessage"] = "Record has been added Succesfully !";
 
-						header('Location: ./contact-us.php');
-                		exit();
+					//	header('Location: ./contact-us.php');
+                	//	exit();
+                		$successMessage = "message has been sent  !";
 			    
 					} else {
 				    	echo "error";
@@ -47,6 +49,10 @@
 <div class="container">  
   	<form id="contact-us-form" action="" method="POST" >
 	    <h2><center>Contact Us Now!</center></h2>
+
+	    <?php if (!empty($successMessage)) {
+	    	echo "<p>".$successMessage."</p>";
+	    } ?>
 		
 	    <fieldset>
 	    	<input placeholder="Full Name" type="text" name="name">
