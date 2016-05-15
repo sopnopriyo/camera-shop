@@ -70,6 +70,11 @@ sec_session_start();
 				$result2 = $mysqli->query($sql2);
 				$number_of_catagory = $result2->num_rows;
 
+				$sql3 = "SELECT id  FROM message";
+				$result3 = $mysqli->query($sql3);
+				$number_of_message = $result3->num_rows;
+
+
 					
 		  ?>
 		  
@@ -89,7 +94,7 @@ sec_session_start();
 		    </div>
 		    <div class="box">
 		        <div class="head">Total Message</div>
-		        <div class="count "><?php echo "0"; ?></div>
+		        <div class="count "><?php echo $number_of_message ?></div>
 		    </div>
 	</div>
 
