@@ -69,7 +69,7 @@ sec_session_start();
          }
          
          if(empty($errors)==true){
-            move_uploaded_file($file_tmp,"uploads/".$file_name);
+            move_uploaded_file($file_tmp,"product-img/".$file_name);
             
             $image= "uploads/".$file_name;
            // echo "$file_tmp";
@@ -105,8 +105,11 @@ sec_session_start();
          <input type="text" name="name" placeholder="Enter Product Name "/> <br>
          <input type="text" name="color" placeholder="Enter Producgt Color"/> <br>
          <input type="text" name="price" placeholder="Enter Producgt price"/> <br>
-         <input type="text" name="stock_status" placeholder="Enter stock status"/> <br>
-
+         <select name="stock_status">
+            <option value="In Stock">In stock</option>
+            <option value="Out of Stock">Out of stock</option>
+         </select>
+         <br>
          <select name="catagory_id">
             <?php 
             $sql = "SELECT id, name  FROM catagory ORDER BY id ASC";
