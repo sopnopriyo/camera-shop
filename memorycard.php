@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/db_connect.php';
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,104 +54,55 @@
 <section id="contents">
    <div id="accesories-page-content">
                       <h3>Top products</h3>
-                        <ul> 
-                          <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d1.jpeg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">SanDisk Ultra 16 GB </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$30.00</strong>
+                     <ul>
+
+                    <?php
+                        $sql = "SELECT * 
+                                FROM product
+                                WHERE catagory_id = 24
+                                ";
+
+                       $result = $mysqli->query($sql);
+
+                        if ($result->num_rows > 0) {
+                           
+
+                            while($row = mysqli_fetch_array($result))
+                            {
+
+                                ?>
+            
+                            <li>
+                                <div class="img"><a href="#"><img alt="" src="<?php echo $row['image']; ?>"></a></div>
+                                <div class="info">
+                                    <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
+                                    <div class="price">
+                                        <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
+                                    </div>
+                                    <div class="actions">
+                                        <a href="product-details.php">Details</a>
+                                    </div>
                                 </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d2.jpeg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Samsung 16 GB </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$30.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d3.jpeg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">SanDisk 8 GB SDHC </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$23.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d4.jpeg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">SanDisk Ultra 32 GB </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$40.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li><li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d5.jpeg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Sony 32 GB SDHC</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$40.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                       <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d6.jpeg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Sony 4 GB SDHC </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$15.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d7.jpeg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Transcend 32 GB SDHC </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$40.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/d8.jpeg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Kingston UHS-I 32 GB SDHC </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$40.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                       </ul>
-   </div>
+                            </li>
+                        
+
+                            <?php
+
+
+
+                            }
+                        
+                            } 
+                            else {
+                                echo "No result found";
+                            }
+                    ?>
+
+                       
+                    
+
+                    </ul>
+                </div>
 
 </section>
 

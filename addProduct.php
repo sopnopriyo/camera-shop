@@ -71,7 +71,7 @@ sec_session_start();
          if(empty($errors)==true){
             move_uploaded_file($file_tmp,"product-img/".$file_name);
             
-            $image= "uploads/".$file_name;
+            $image= "product-img/".$file_name;
            // echo "$file_tmp";
             echo "Success file uploading";
          }

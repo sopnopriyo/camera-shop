@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/db_connect.php';
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,128 +54,55 @@
 <section id="contents">
    <div id="accesories-page-content">
                       <h3>Top products</h3>
-                        <ul>    
-                          <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T1.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Manfrotto Compact </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$350.00</strong>
+                     <ul>
+
+                    <?php
+                        $sql = "SELECT * 
+                                FROM product
+                                WHERE catagory_id = 31
+                                ";
+
+                       $result = $mysqli->query($sql);
+
+                        if ($result->num_rows > 0) {
+                           
+
+                            while($row = mysqli_fetch_array($result))
+                            {
+
+                                ?>
+            
+                            <li>
+                                <div class="img"><a href="#"><img alt="" src="<?php echo $row['image']; ?>"></a></div>
+                                <div class="info">
+                                    <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
+                                    <div class="price">
+                                        <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
+                                    </div>
+                                    <div class="actions">
+                                        <a href="product-details.php">Details</a>
+                                    </div>
                                 </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T2.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Tecno Selfie Stick</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$100.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T3.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Velbon EF-44 Tripod</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$209.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T4.jpg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Manfrotto 190GO!</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$304.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T5.jpg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Manfrotto 391RC2 </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$205.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T6.jpg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Manfrotto Befree Co. </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$570.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T7.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Manfrotto Pixi Mini </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$369.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li><li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T8.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Manfrotto Compact Li. </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$409.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                       <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T9.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Manfrotto 055XPRO3 3</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$390.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/T10.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Steadicam Curve</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$376.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                  </ul>
-   </div>
+                            </li>
+                        
+
+                            <?php
+
+
+
+                            }
+                        
+                            } 
+                            else {
+                                echo "No result found";
+                            }
+                    ?>
+
+                       
+                    
+
+                    </ul>
+                </div>
 
 </section>
 

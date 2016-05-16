@@ -21,7 +21,7 @@
         <option value="camera">Camera</option>
         <option value="lense">Lenses</option>
         <option value="accesories">Accesories</option>
-        <option value="mercedes">Others</option>
+        <option value="others">Others</option>
       </select>
       <button type="submit" name="search">Search</button>
     </form>
@@ -29,14 +29,12 @@
 </nav>
 
 <aside id="sidebar">
-<h1 style="font-family: tahoma; color: #FF7800">Categories</h1>
+<h1 style="font-family: tahoma; color: #FF7800">Top Categories</h1>
 
     <nav style="font-family: tahoma">
        <ul class="sidenav">
            <li> <a href="camera.php">Camera</a></li>
-            <li> <a href="accesories.php">Lense</a></li>
-            <li> <a href="accesories.php">Memory Card</a></li>
-            <li> <a href="accesories.php">Camera Bag</a></li>
+           <li> <a href="lense.php">Lense</a></li>
             <li> <a href="accesories.php">Accesories</a></li>
        </ul> 
     </nav>
