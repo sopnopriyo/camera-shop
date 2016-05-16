@@ -65,7 +65,7 @@ sec_session_start();
 
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] ."</td><td>".$row['quantity']. "</td></tr>"; 
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] ."</td><td>".$row['quantity']."</td>"."<td>"."<a href =\""."delete-product.php?id=".$row['id'].""."\"".">"."Delete"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 
