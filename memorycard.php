@@ -80,7 +80,7 @@ include_once 'includes/db_connect.php';
                                         <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.php">Details</a>
+                                        <a href="product-details.php?id=<?php echo $row['id']; ?>">Details</a>
                                     </div>
                                 </div>
                             </li>
