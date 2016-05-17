@@ -67,7 +67,7 @@ sec_session_start();
 
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td> <td>"."<button> Edit</button> <button> Delete</button>"."</td></tr>"; 
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name']."<td>"."<a href =\""."delete-catagory.php?id=".$row['id'].""."\"".">"."Delete"."</a>"."</td>"."<td>"."<a href =\""."update-catagory.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 
