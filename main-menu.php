@@ -22,12 +22,15 @@ session_start();
 
                     ?>
 
-                     <li class="right"> <a href="customer-profile.php"> <img src="img/user-icon.png"  height="20px" width="20px"> <?php
-                    echo "Hello ! ".$_SESSION["name"];
+                     <li class="right"> <a href="customer-profile.php"> <img src="img/user-icon.png"  height="20px" width="20px">
+
+                      <?php
+                        echo "Hello ! ".$_SESSION["name"];
 
                     ?>
                     </a></li>
 
+                    <li class="right"><a href="customer-logout.php">Logout</a> </li>
 
                     <?php
                 }
