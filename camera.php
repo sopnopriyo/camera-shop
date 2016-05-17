@@ -1,5 +1,5 @@
 <?php
-include_once 'includes/db_connect.php';
+  include_once 'includes/db_connect.php';
 
 ?>
 
@@ -20,23 +20,9 @@ include_once 'includes/db_connect.php';
 
 <?php 
 
-    include('main-menu.php')
+    include('main-menu.php');
+    include ('search-nav.php');
 ?>
-<nav id="search-nav">
-  <center>
-    <form method="post" action="search-result.html">
-      <input type="text" name="keyword" placeholder="Type an item">
-      <select>
-        <option value="camera">Camera</option>
-        <option value="lense">Lenses</option>
-        <option value="accesories">Accesories</option>
-        <option value="mercedes">Others</option>
-      </select>
-      <button type="submit" name="search">Search</button>
-    </form>
-  </center> 
-</nav>
-
 <aside id="camera-page-sidebar">
 <h1 style="color: #FF7800">Categories</h1>
 
@@ -77,7 +63,7 @@ include_once 'includes/db_connect.php';
                                         <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
                                     </div>
                                     <div class="actions">
-                                        <a href="product-details.php">Details</a>
+                                        <a href="product-details.php?id=<?php echo $row['id']; ?>">Details</a>
                                     </div>
                                 </div>
                             </li>
@@ -94,6 +80,8 @@ include_once 'includes/db_connect.php';
                                 echo "No result found";
                             }
                     ?>
+
+
 
                        
                     
