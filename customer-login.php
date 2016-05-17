@@ -82,6 +82,7 @@ include_once 'includes/db_connect.php';
                   <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
                </form>
+               <a href="customer-register.php">Not registered ? Sign up now !</a>
                
                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 					

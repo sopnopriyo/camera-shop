@@ -28,7 +28,7 @@ include_once 'includes/db_connect.php';
 
                     if ($mysqli->query($sql) === TRUE) {
 
-                        header('Location: ./member-register.php');
+                        header('Location: ./customer-login.php');
                         exit();
                 
                     } else {
