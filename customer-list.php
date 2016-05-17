@@ -32,8 +32,7 @@ sec_session_start();
 
 
 <section id="dashboard-main">
-		<h2>Colored Table Header</h2>
-		<p><a href="addProduct.php">Add Product</a></p>
+		<h2>List of registered Customer</h2>
 		<?php 
 
 			if(empty($successMessage)){
@@ -47,25 +46,22 @@ sec_session_start();
 		<p></p>
 	<table>
 	  	<tr>
-	    	<th>Sr. No</th>
 	    	<th>Name</th>
-	    	<th>Stock Status</th>
-			<th>Catagory</th>
-			<th>Price</th>
-			<th>Quantity</th>
-			<th> Action </th>
-
-
+	    	<th>Email</th>
+	    	<th>Phone</th>
+			<th colspan="6">Address</th>
+			
 	    </tr>
 			<?php 
-				$sql = "SELECT p.id, p.name,p.price,p.stock_status, p.quantity ,c.name as cat  FROM product p, catagory c where c.name =(select name from catagory where id = p.catagory_id)";
+				$sql = "SELECT name, email, phone , address FROM customer";
 				$result = $mysqli->query($sql);
 
 				if ($result->num_rows > 0) {
-			   		
+			   		//var_dump($row)
+
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] ."</td><td>".$row['quantity']."</td>"."<td>"."<a href =\""."delete-product.php?id=".$row['id'].""."\"".">"."Delete"."</a>"."</td>"."<td>"."<a href =\""."update-product.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
+		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td><td> " . $row['address']."</td></tr>"; 
 		          	}
 			    
 				} 
@@ -78,7 +74,7 @@ sec_session_start();
 </section>
 
 <footer>
-Copyright © sopnopriyo.com
+Copyright © W3Schools.com
 </footer>
         <?php else : ?>
             <p>
@@ -88,3 +84,4 @@ Copyright © sopnopriyo.com
 
 </body>
 </html>
+  
