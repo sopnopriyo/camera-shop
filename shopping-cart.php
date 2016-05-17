@@ -39,6 +39,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
+
+                    <!--
+                    
                     <table class="table table-bordered table-responsive">
                         <thead class="bg-primary">
                             <th>Item</th>
@@ -50,7 +53,10 @@
                         <tbody>
                         <?php $total = 0; ?>
                         <?php if(isset($_SESSION['cart'])){ ?>
+
+
                             <?php foreach($_SESSION['cart'] as $row): ?>
+
                                 <?php if($row['qty'] != 0): ?>
                                 <tr>
                                     <td class="text-center"><strong><?php echo $row['product'];?></strong></td>
@@ -86,6 +92,8 @@
                                                    
                         </tbody>
                     </table>
+
+                    -->
                     <div class="pull-right">
                         <a href="cart/data.php?q=emptycart" class="btn btn-danger btn-lg">Empty Cart!!!</a>
                         <a href="#" class="btn btn-success btn-lg" data-toggle="modal" data-target="#checkout_modal">Check Out</a>
