@@ -18,7 +18,7 @@
         if ($result->num_rows > 0) {
             //var_dump($row)
 
-            $rows = mysqli_fetch_array($result);
+        //    $rows = mysqli_fetch_array($result);
 
         }
 
@@ -88,9 +88,10 @@
                         <?php $total = 0; ?>
                         <?php if($result->num_rows > 0){ ?>
 
-                        
+                    
 
-                            <?php while($row = mysqli_fetch_array($result)) { ?>
+
+                            <?php while($row = mysqli_fetch_assoc($result)) { ?>
 
                                 <tr>
                                     <td class="text-center"><strong><?php echo $row['name'];?></strong></td>
