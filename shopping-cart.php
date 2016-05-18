@@ -114,6 +114,9 @@
                         </tbody>
                     </table>
 
+
+                   
+                    <p> <?php echo "Total amount : <strong>".$total."</strong> RM"; ?></p>
                   
                     <div class="pull-right">
                        
