@@ -43,7 +43,7 @@
                     <ul>
 
                     <?php
-                        $sql = "SELECT * FROM product ";
+                        $sql = "SELECT * FROM product WHERE catagory_id IN(22,27,28,29)";
 
                        $result = $mysqli->query($sql);
 
@@ -80,13 +80,7 @@
                                 echo "No result found";
                             }
                     ?>
-
-
-
-                       
-                    
-
-                    </ul>
+ </ul>
                 </div>
 
 </section>
