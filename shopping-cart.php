@@ -7,12 +7,12 @@
     if (isset($_SESSION['cart'])) {
         # code...
     
+        
+            $whereIn = implode(',', $_SESSION['cart']);
+            $sql = "SELECT * FROM product WHERE id IN ($whereIn)";
+        
 
-        $whereIn = implode(',', $_SESSION['cart']);
-
-
-
-        $sql = "SELECT * FROM product WHERE id IN ($whereIn)";
+        
         $result = $mysqli->query($sql);
 
         if ($result->num_rows > 0) {
@@ -84,9 +84,11 @@
                             <th></th>
                         </thead>
                         <tbody>
+
                         <?php $total = 0; ?>
                         <?php if($result->num_rows > 0){ ?>
 
+                        
 
                             <?php while($row = mysqli_fetch_array($result)) { ?>
 
