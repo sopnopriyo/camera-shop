@@ -34,7 +34,12 @@
         header('Location: ./shopping-cart.php');    
     }
 
-    ?>
+?>
+
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -100,9 +105,12 @@
                         </tbody>
                     </table>
 
-
+                    <br>
                    
-                    <p> <?php echo "Total amount : <strong>".$total."</strong> RM"; ?></p>
+                     <?php echo "Total amount : <strong>".$total."</strong> RM"; ?><br>
+                     <?php echo "GST 8 %: <strong>".$tax=(($total*8)/100)." <strong> RM"; ?><br>
+                     Total : <?php echo $tax+$total; ?></p>
+                      
                   
                     <div class="pull-right">
                        
