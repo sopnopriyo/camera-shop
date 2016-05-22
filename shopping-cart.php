@@ -206,10 +206,7 @@
     } 
   ?>
 
-  <?php 
-
- var_dump($array);
-  ?>
+  
   
 <footer>
       Copyright @University of Malaya
