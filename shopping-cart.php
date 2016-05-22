@@ -96,7 +96,7 @@
                                     <?php $itotal = $row['price'] *1; ?>
                                     <td class="text-center"><font class="itotal"><?php echo $itotal; ?></font></td>
 
-                                    <?php if($row['catagory_id']){
+                                    <?php if($row['catagory_id']==27){
                                         $lense++;
                                     } ?>
                                 </tr>
