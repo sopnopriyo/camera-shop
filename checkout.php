@@ -30,6 +30,7 @@
 
  ?>
 
+
 <?php
 
     if ( isset( $_POST['empty-cart'] ) ) {
@@ -59,12 +60,22 @@
     include('main-menu.php');
 ?>
 
+
  <section id="form"><!--form-->
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
 
-                    
+                  
+
+                  <?php if (empty($_SESSION['name'])) {
+                        
+                        header('Location: ./customer-login.php');
+
+                      }
+
+                ?>
+
         <h2> Invoice details</h2>
                     <table border="1" style="width:60%">
                         <thead >
@@ -142,12 +153,20 @@
                             </tbody>
                         </table>
                     <?php } ?>
+
+
+                    
+
+
+
+
         </div>
       </div>
     </div>
   </section><!--/form-->
 
- 
+
+
   
 <footer>
       Copyright @University of Malaya

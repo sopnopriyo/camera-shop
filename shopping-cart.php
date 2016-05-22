@@ -60,7 +60,7 @@
 
 <?php 
 
-    include('main-menu.php')
+    include('main-menu.php');
 ?>
 
  <section id="form"><!--form-->

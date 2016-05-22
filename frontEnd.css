@@ -48,7 +48,12 @@ header img{
 
 #navbar ul li:hover ul {
     display: block;
-    background-color: #C8C8C8;
+    background-color: black;
+
+}
+
+#navbar ul li:hover ul li {
+   float: left;
     
 }
 

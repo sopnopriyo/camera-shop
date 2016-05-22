@@ -43,9 +43,16 @@ session_start();
                         echo "Hello ! ".$_SESSION["name"];
 
                     ?>
-                    </a></li>
 
+                    </a>
+                    <ul>
+
+                    
                     <li style="float:right;"><a href="customer-logout.php">Logout</a> </li>
+
+                        </ul></li>
+
+
 
                     <?php
                 }
