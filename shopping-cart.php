@@ -70,13 +70,13 @@
 
                     
 
-                    <table class="table table-bordered table-responsive">
+                  <table border="1" style="width:90%" >
                         <thead class="bg-primary">
                             <th>Item</th>
                             <th>Price</th>
-                            <th>Qty</th>
+                            <th >Qty</th>
                             <th>Total</th>
-                            <th></th>
+                        
                         </thead>
                         <tbody>
 

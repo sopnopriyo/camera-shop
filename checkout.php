@@ -42,10 +42,6 @@
 
 
 
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,14 +65,14 @@
         <div class="col-sm-12">
 
                     
-
-                    <table class="table table-bordered table-responsive">
-                        <thead class="bg-primary">
+        <h2> Invoice details</h2>
+                    <table border="1" style="width:60%">
+                        <thead >
                             <th>Item Name</th>
                             <th>Price</th>
                             <th>Qty</th>
                             <th>Total</th>
-                            <th></th>
+                            
                         </thead>
                         <tbody>
 
@@ -122,12 +118,21 @@
                   
                       <div class="pull-right">
                        
+
+                       <label>Select Shipping Method</label>
+                        <select>
+                            <option>Fast</option>
+                            <option>Regular</option>
+                            
+                        </select>
+
+
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             <button name="empty-cart">Confirm Order!!!</button>
                           
                             
                         </form>
-
+                        
                 
                     </div>
                     <?php }
