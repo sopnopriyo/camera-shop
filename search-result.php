@@ -11,7 +11,7 @@
 <body>
 
 <header>
-<h1>City Gallery</h1>
+<img src="img/marvel.png" alt="logo">
 </header>
 
 <?php 
@@ -20,22 +20,11 @@
     include ('search-nav.php');
 ?>
 
-<aside id="sidebar">
-<h1>Catagories</h1>
-
-    <nav>
-       <ul class="sidenav">
-           <li> <a href="camera.html">Camera</a></li>
-            <li> <a href="accesories.html">Lense</a></li>
-            <li> <a href="accesories.html">Memory Card</a></li>
-            <li> <a href="accesories.html">Camera Bag</a></li>
-            <li> <a href="accesories.html">Accesories</a></li>
-       </ul> 
-    </nav>
-</aside>
 
 <section id="contents">
    <div id="homepage-content">
+
+   <h2> Search Result</h2>
       <ul>
 
                     <?php
