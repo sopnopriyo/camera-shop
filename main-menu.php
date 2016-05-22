@@ -51,7 +51,7 @@ session_start();
                 }
         ?>
          
-        <li style="float:right;" > <a href="shopping-cart.php"> <img src="img/cart-icon.png"  height="17px" width="17px"> Cart </a></li>
+       <li class="right"> <a href="shopping-cart.php"> <img src="img/cart-icon.png"  height="20px" width="20px"> Cart (<?php  echo count($_SESSION['cart']);?> )</a></li>
     </ul>
 
 </nav>
