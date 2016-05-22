@@ -35,7 +35,7 @@
     if ( isset( $_POST['empty-cart'] ) ) {
        
         unset($_SESSION['cart']);
-        header('Location: ./shopping-cart.php');    
+        header('Location: ./index.php');    
     }
 
 ?>
@@ -60,7 +60,7 @@
 
 <?php 
 
-    include('main-menu.php')
+    include('main-menu.php');
 ?>
 
  <section id="form"><!--form-->
@@ -72,7 +72,7 @@
 
                     <table class="table table-bordered table-responsive">
                         <thead class="bg-primary">
-                            <th>Item</th>
+                            <th>Item Name</th>
                             <th>Price</th>
                             <th>Qty</th>
                             <th>Total</th>
@@ -91,13 +91,7 @@
                                 <tr>
                                     <td class="text-center"><strong><?php echo $row['name'];?></strong></td>
                                     <td class="text-center"><?php echo $row['price'];?></td>
-                                    <td class="text-center">
-                                        <form action="" method="POST">
-                                            <input type="hidden" name="id" value="<?php echo $id;?>" />
-                                            <input type="number" name="quantity" value="<?php echo $array[$row['id']]?>" min="1" style="width:50px;"/>
-                                            <button type="submit" name ="update-cart"class="btn btn-info">Update</button>
-                                        </form>
-                                    </td>
+                                    <td class="text-center">1</td>
                                     <?php $itotal = $row['price'] *1; ?>
                                     <td class="text-center"><font class="itotal"><?php echo $itotal; ?></font></td>
 
@@ -107,8 +101,7 @@
 
                                     <?php 
 
-                                     //   $array = array_merge($array, array($row['id'] =>2 ));
-
+                                     
                                     ?>
                                 </tr>
                                 
@@ -127,11 +120,11 @@
                      Total : <?php echo $tax+$total; ?></p>
                       
                   
-                    <div class="pull-right">
+                      <div class="pull-right">
                        
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                            <button name="empty-cart">Empty Cart!!!</button>
-                            <button name="check-out"><a href ="checkout.php">Check Out!!!</a></button>
+                            <button name="empty-cart">Confirm Order!!!</button>
+                          
                             
                         </form>
 
@@ -140,7 +133,7 @@
                     <?php }
 
                     else{ ?>
-                            <tr><td colspan="5" class="text-center alert alert-danger"><strong>*** Your Cart is Empty ***</strong></td></tr>
+                            <tr><td colspan="5" class="text-center alert alert-danger"><strong>*** You do not have anything in the cart ***</strong></td></tr>
                             </tbody>
                         </table>
                     <?php } ?>
@@ -149,67 +142,7 @@
     </div>
   </section><!--/form-->
 
-  <?php if ($lense>0) {
-        
-
-        ?>
-                            <?php
-                        $sql = "SELECT * 
-                                FROM product
-                                WHERE catagory_id = 23 LIMIT 2
-                                ";
-
-                       $result = $mysqli->query($sql);
-
-                        if ($result->num_rows > 0) {
-                           
-                           ?>
-                           <center>
-                           <h3>You might be interested to configure with following components</h3></center>
-                           <?php
-
-                            while($row = mysqli_fetch_array($result))
-                            {
-
-                                ?>
-            
-                            <center>
-                                <div class="img"><a href="#"><img alt="" height="200" width="200" src="<?php echo $row['image']; ?>" ></a></div>
-                                <div class="info">
-                                    <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
-                                    <div class="price">
-                                        <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
-                                    </div>
-                                    <div class="actions">
-                                        <a href="add-to-cart.php?id=<?php echo $row['id'] ?>"><button >Add to Cart</button></a>
-                
-                                    </div>
-                                </div>
-                            </center>
-
-                            <?php
-
-
-
-                            }
-                        
-                            } 
-                            else {
-                                echo "No result found";
-                            }
-                    ?>
-
-
-
-        <?php  
-        $lense--;
-    } 
-  ?>
-
-  <?php 
-
- var_dump($array);
-  ?>
+ 
   
 <footer>
       Copyright @University of Malaya

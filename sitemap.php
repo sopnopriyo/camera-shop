@@ -3,8 +3,12 @@
 <head>
     <title>Site Map</title>
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="frontEnd.css"> 
+ <link rel="stylesheet" type="text/css" href="frontEnd.css">
+ <style >
+ ul li a{
+    text-decoration: none;
+ }
+ </style> 
 </head>
 <body>
 
