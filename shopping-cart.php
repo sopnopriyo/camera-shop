@@ -4,6 +4,7 @@
     session_start();
 
 
+
     if (isset($_SESSION['cart'])) {
         # code...
     
@@ -16,10 +17,9 @@
         $result = $mysqli->query($sql);
 
         if ($result->num_rows > 0) {
-            //var_dump($row)
 
-        //    $rows = mysqli_fetch_array($result);
-
+            $lense=0;
+    
         }
 
     }
@@ -95,6 +95,10 @@
                                     </td>
                                     <?php $itotal = $row['price'] *1; ?>
                                     <td class="text-center"><font class="itotal"><?php echo $itotal; ?></font></td>
+
+                                    <?php if($row['catagory_id']){
+                                        $lense++;
+                                    } ?>
                                 </tr>
                                 
                                 <?php $total = $total + $itotal;?>  
@@ -133,6 +137,63 @@
       </div>
     </div>
   </section><!--/form-->
+
+  <?php if ($lense>0) {
+        
+
+        ?>
+                            <?php
+                        $sql = "SELECT * 
+                                FROM product
+                                WHERE catagory_id = 23 LIMIT 2
+                                ";
+
+                       $result = $mysqli->query($sql);
+
+                        if ($result->num_rows > 0) {
+                           
+                           ?>
+                           <center>
+                           <h3>You might be interested to configure with following components</h3></center>
+                           <?php
+
+                            while($row = mysqli_fetch_array($result))
+                            {
+
+                                ?>
+            
+                            <center>
+                                <div class="img"><a href="#"><img alt="" height="200" width="200" src="<?php echo $row['image']; ?>" ></a></div>
+                                <div class="info">
+                                    <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
+                                    <div class="price">
+                                        <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
+                                    </div>
+                                    <div class="actions">
+                                        <a href="add-to-cart.php?id=<?php echo $row['id'] ?>"><button >Add to Cart</button></a>
+                
+                                    </div>
+                                </div>
+                            </center>
+
+                            <?php
+
+
+
+                            }
+                        
+                            } 
+                            else {
+                                echo "No result found";
+                            }
+                    ?>
+
+
+
+        <?php  
+        $lense--;
+    } 
+  ?>
   
 <footer>
       Copyright @University of Malaya
