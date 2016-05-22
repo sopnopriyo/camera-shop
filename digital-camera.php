@@ -24,18 +24,6 @@ include_once 'includes/db_connect.php';
     include('search-nav.php');
 ?>
 
-<aside id="camera-page-sidebar">
-<h1 style="color: #FF7800">Categories</h1>
-
-    <nav>
-       <ul class="camera-page-sidenav">
-            <li> <a href="dslr.php">DSLR</a></li>
-            <li> <a href="digital-camera.php">Digital Camera</a></li>
-            <li> <a href="camrecorder.php">Camrecorder</a></li>
-            <li> <a href="dslr.php">Broadcast Camera</a></li>
-       </ul> 
-    </nav>
-</aside>
 
 <section id="camera-contents">
    <div id="camera-page-content">

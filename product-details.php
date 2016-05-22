@@ -46,8 +46,8 @@
 
     		<header>
 				<hgroup>
-					<h1><?php echo $row['name'] ?></h1>
-					<h1><?php echo $row['color'] ?></h1>
+					<h1 style="color: white;"><?php echo $row['name'] ?></h1>
+					<h3 style="color: white;"><?php echo $row['color'] ?></h3>
 				</hgroup>
 			</header>
 

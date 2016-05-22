@@ -23,20 +23,7 @@ include_once 'includes/db_connect.php';
     include('search-nav.php');
 ?>
 
-<aside id="accesories-page-sidebar">
-<h1 style="color: #FF7800">Categories</h1>
 
-    <nav>
-        <ul class="sidenav">
-            <li> <a href="lense.php">Lense</a></li>
-            <li> <a href="flash.php">Flash</a></li>
-            <li> <a href="tripod.php">Tripod</a></li>
-            <li> <a href="memorycard.php">Memory Card</a></li>
-            <li> <a href="bagcase.php">Bag and Case</a></li>
-            <li> <a href="accesories.php">Accesories</a></li>
-       </ul> 
-    </nav>
-</aside>
 
 <section id="contents">
    <div id="accesories-page-content">

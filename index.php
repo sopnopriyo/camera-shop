@@ -19,17 +19,6 @@
     include ('search-nav.php');
 ?>
 
-<aside id="sidebar">
-<h1 style="font-family: tahoma; color: #FF7800">Top Categories</h1>
-
-    <nav style="font-family: tahoma">
-       <ul class="sidenav">
-           <li> <a href="camera.php">Camera</a></li>
-           <li> <a href="lense.php">Lense</a></li>
-            <li> <a href="accesories.php">Accesories</a></li>
-       </ul> 
-    </nav>
-</aside>
 
 
   
