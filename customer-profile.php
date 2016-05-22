@@ -52,6 +52,9 @@ session_start();
     }
 ?>
 
+<center>
+    <a href="update-customer-profile.php?id=<?php echo $id ?>">Update Profile</a>
+</center>
 <div id="ProfilePage">
     <div id="LeftCol">
         <div id="Photo">
