@@ -9,7 +9,6 @@ html,
 }
 header {
     background-color: black;
-    color:white;
     text-align:center;
     padding:0;     
 }
@@ -18,21 +17,19 @@ header img{
     width:100%;
 }
 
-#top-main-nav ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black;
-    padding-left: 5%;
-    padding-right: 5%;      
 }
 
-#top-main-nav ul li{
+#navbar li {
     float: left;
-    
 }
-#top-main-nav ul li a{
+
+#navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -40,20 +37,21 @@ header img{
     text-decoration: none;
 }
 
-#top-main-nav ul li a.active {
-    background-color: #4CAF50;
-    color: white;
+#navbar li a:hover {
+    background-color: #111;
 }
 
-#top-main-nav li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+#navbar ul ul {
+    display: none;
+    position: absolute;
 }
 
-#top-main-nav ul li.right {
- float:right;
- padding-right: 10px;
+#navbar ul li:hover ul {
+    display: block;
+    background-color: #C8C8C8;
+    
 }
+
 footer {
     background-color: #332225;
     color:white;
@@ -67,6 +65,7 @@ footer {
 /*
 Home Page start
 */
+
 
 #search-nav{
     background-color: gray;
