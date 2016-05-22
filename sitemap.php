@@ -28,11 +28,7 @@
 <dl>
      <ul>
         <li><a href="index.php" >Home</a></li>
-<ul>
-        <li><a href="camera.php" >Camera</a></li>
-        <li><a href="lense.php" >Lense</a></li>
-<li><a href="accesories.php" >Accesories</a></li>
-    </ul>
+
         <li><a href="camera.php">Camera</a></li>
 <ul>
         <li><a href="dslr.php" >DSLR</a></li>
@@ -52,6 +48,8 @@
     </ul>
         <li><a href="about-us.php" ="check">About Us</a></li>
         <li><a href="contact-us.php"="info">Contact Us</a></li>
+        <li><a href="shopping-cart.php"="info">Cart</a></li>
+        
       </ul>
 </dl>
 
