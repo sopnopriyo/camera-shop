@@ -4,8 +4,16 @@ include_once 'includes/db_connect.php';
 <html>
    
    <head>
-      <title>PHP Form Validation</title>
+      <title>Login Page</title>
+      <link rel="stylesheet" type="text/css" href="frontEnd.css">   
    </head>
+   
+
+   <header>
+      <img src="img/marvel.png" alt="logo">
+   </header>
+
+   <?php  include 'main-menu.php';?>
    
    <body>
       <?php
@@ -45,43 +53,44 @@ include_once 'includes/db_connect.php';
          }
       ?>
    
-      <h2>Member resistration</h2>
-      
-      <form method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-         <table>
-            <tr>
-               <td>Name:</td> 
-               <td><input type = "text" name = "name"></td>
-            </tr>
+      <center>
+            <h2>Member resistration</h2>
             
-            <tr>
-               <td>E-mail:</td>
-               <td><input type = "text" name = "email"></td>
-            </tr>
-            
-            <tr>
-               <td>Password:</td>
-               <td><input type = "password" name = "password"></td>
-            </tr>
-            
-            <tr>
-               <td>Addresss:</td>
-               <td><textarea name = "address" rows = "5" cols = "20"></textarea></td>
-            </tr>
-            
-            <tr>
-               <td>Phone:</td>
-               <td><input type = "text" name = "phone"></td>
-            </tr>
-            
-            <tr>
-               <td>
-                  <input type = "submit" name = "submit" value = "Submit"> 
-               </td>
-            </tr>
-         </table>
-      </form>
-      
+            <form method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+               <table>
+                  <tr>
+                     <td>Name:</td> 
+                     <td><input type = "text" name = "name"></td>
+                  </tr>
+                  
+                  <tr>
+                     <td>E-mail:</td>
+                     <td><input type = "text" name = "email"></td>
+                  </tr>
+                  
+                  <tr>
+                     <td>Password:</td>
+                     <td><input type = "password" name = "password"></td>
+                  </tr>
+                  
+                  <tr>
+                     <td>Addresss:</td>
+                     <td><textarea name = "address" rows = "5" cols = "20"></textarea></td>
+                  </tr>
+                  
+                  <tr>
+                     <td>Phone:</td>
+                     <td><input type = "text" name = "phone"></td>
+                  </tr>
+                  
+                  <tr>
+                     <td>
+                        <input type = "submit" name = "submit" value = "Submit"> 
+                     </td>
+                  </tr>
+               </table>
+            </form>
+         </center>        
     
       
    </body>

@@ -49,11 +49,12 @@ sec_session_start();
 	    	<th>Name</th>
 	    	<th>Email</th>
 	    	<th>Phone</th>
-			<th colspan="6">Address</th>
+			<th colspan="3">Address</th>
+			<th>Action</th>
 			
 	    </tr>
 			<?php 
-				$sql = "SELECT name, email, phone , address FROM customer";
+				$sql = "SELECT id,name, email, phone , address FROM customer";
 				$result = $mysqli->query($sql);
 
 				if ($result->num_rows > 0) {
@@ -61,7 +62,7 @@ sec_session_start();
 
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td><td> " . $row['address']."</td></tr>"; 
+		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td><td> " . $row['address']."</td>"."<td>"."<a href =\""."customer-delete.php?id=".$row['id'].""."\"".">"."Delete"."</a>"."</td>"."<td>"."<a href =\""."customer-update.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 

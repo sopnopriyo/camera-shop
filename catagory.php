@@ -56,7 +56,7 @@ sec_session_start();
 	  	<tr>
 	    	<th>Sr. No</th>
 	    	<th>Catagory Name</th>
-	    	<th>Action</th>
+	    	<th colspan="6">Action</th>
 	    </tr>
 			<?php 
 				$sql = "SELECT id, name  FROM catagory ORDER BY id ASC";

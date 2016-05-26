@@ -53,7 +53,7 @@ sec_session_start();
 			<th>Catagory</th>
 			<th>Price</th>
 			<th>Quantity</th>
-			<th> Action </th>
+			<th colspan="6"> Action </th>
 
 
 	    </tr>

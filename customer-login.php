@@ -49,27 +49,19 @@ include_once 'includes/db_connect.php';
    
    <head>
       <title>Login Page</title>
-      
-      <style type = "text/css">
-         body {
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:14px;
-         }
-         
-         label {
-            font-weight:bold;
-            width:100px;
-            font-size:14px;
-         }
-         
-         .box {
-            border:#666666 solid 1px;
-         }
-      </style>
-      
+      <link rel="stylesheet" type="text/css" href="frontEnd.css">   
    </head>
    
-   <body bgcolor = "#FFFFFF">
+
+   <header>
+      <img src="img/marvel.png" alt="logo">
+   </header>
+
+   <?php  include 'main-menu.php';?>
+
+
+   <br><br>
+   <section> 
 	
       <div align = "center">
          <div style = "width:300px; border: solid 1px #333333; " align = "left">
@@ -78,7 +70,7 @@ include_once 'includes/db_connect.php';
             <div style = "margin:30px">
                
                <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "post">
-                  <label>Email  :</label><input type = "text" name = "email" class = "box"/><br /><br />
+                  <label>Email  :</label> <br><input type = "text" name = "email" class = "box"/><br /><br />
                   <label>Password :</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
                </form>
@@ -92,5 +84,5 @@ include_once 'includes/db_connect.php';
 			
       </div>
 
-   </body>
+   </section>
 </html>
