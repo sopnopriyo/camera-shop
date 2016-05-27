@@ -131,7 +131,7 @@
                        
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             <button name="empty-cart">Empty Cart!!!</button>
-                            <button name="check-out"><a href ="checkout.php">Check Out!!!</a></button>
+                           <a href ="checkout.php">Check Out!!!</a>
                             
                         </form>
 
