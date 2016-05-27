@@ -90,7 +90,7 @@
 
                                 <tr>
                                     <td class="text-center"><strong><?php echo $row['name'];?></strong></td>
-                                    <td class="text-center"><?php echo $row['price'];?></td>
+                                    <td class="text-center"><?php echo $row['price']-$row['promotion'];?></td>
                                     <td class="text-center">
                                         <form action="" method="POST">
                                             <input type="hidden" name="id" value="<?php echo $id;?>" />
@@ -98,7 +98,7 @@
                                             <button type="submit" name ="update-cart"class="btn btn-info">Update</button>
                                         </form>
                                     </td>
-                                    <?php $itotal = $row['price'] *1; ?>
+                                    <?php $itotal = $row['price']-$row['promotion']; ?>
                                     <td class="text-center"><font class="itotal"><?php echo $itotal; ?></font></td>
 
                                     <?php if($row['catagory_id']==27){
@@ -123,7 +123,7 @@
                     <br>
                    
                      <?php echo "Total amount : <strong>".$total."</strong> RM"; ?><br>
-                     <?php echo "GST 8 %: <strong>".$tax=(($total*8)/100)." <strong> RM"; ?><br>
+                     <?php echo "GST 6 %: <strong>".$tax=(($total*6)/100)." <strong> RM"; ?><br>
                      Total : <?php echo $tax+$total; ?></p>
                       
                   

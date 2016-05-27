@@ -30,7 +30,7 @@
                     <ul>
 
                     <?php
-                        $sql = "SELECT * FROM product ORDER BY id DESC LIMIT 0,8";
+                        $sql = "SELECT * FROM product WHERE promotion>0 ORDER BY id DESC LIMIT 0,4";
 
                        $result = $mysqli->query($sql);
 
@@ -47,7 +47,11 @@
                                 <div class="info">
                                     <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
                                     <div class="price">
-                                        <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
+                                        <span class="st">Current Price:</span><strong >$<?php echo $row['price']-$row['promotion']; ?>
+                                        </strong> <br>
+                                        <span class="st"></span><strong style='color:black;text-decoration:line-through'>$<?php echo $row['price']; ?>
+                                        </strong>
+
                                     </div>
                                     <div class="actions">
                                         <a href="product-details.php?id=<?php echo $row['id']; ?>">Details</a>
