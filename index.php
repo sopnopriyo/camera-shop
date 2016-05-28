@@ -101,11 +101,8 @@
                                 <div class="info">
                                     <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
                                     <div class="price">
-                                        <span class="st">Current Price:</span><strong >$<?php echo $row['price']-$row['promotion']; ?>
+                                        <span class="st">Our Price:</span><strong >$<?php echo $row['price']; ?>
                                         </strong> <br>
-                                        <span class="st"></span><strong style='color:black;text-decoration:line-through'>$<?php echo $row['price']; ?>
-                                        </strong>
-
                                     </div>
                                     <div class="actions">
                                         <a href="product-details.php?id=<?php echo $row['id']; ?>">Details</a>
