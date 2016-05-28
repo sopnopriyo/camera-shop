@@ -71,6 +71,9 @@
 						</ul>
 				</details>
 				<a href="add-to-cart.php?id=<?php echo $row['id'] ?>"><button >Add to Cart</button></a>
+
+
+				<?php include('product-rating.php') ;?>
 				 
 			</section>
     		<?php
@@ -80,12 +83,9 @@
 	}
 		
 	?>
+</div>
 
-	
-			
-			
-			
-		</div>
+
 		<script>
 			if ($('html').hasClass('no-details')) {
 				
