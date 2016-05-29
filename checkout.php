@@ -4,7 +4,7 @@
     session_start();
 
 
-    $keys = $_SESSION[cart];
+    $keys = $_SESSION['cart'];
     $array = array_fill_keys($keys, 1);
     
 
@@ -41,6 +41,40 @@
 
 ?>
 
+<?php
+
+    if ( isset( $_POST['order'] ) ) {
+
+
+
+
+        $customer_id = $_SESSION['id'];
+        $item_names = implode(',', $_SESSION['cart']);
+        $status = "created";
+        
+
+    
+         $sql = "INSERT INTO orderProduct(customer_id, item_id, status) VALUES
+                 ('$customer_id','$item_names','$status') ";
+
+      
+            if ($mysqli->query($sql) === TRUE) {
+
+                        unset($_SESSION['cart']);
+                        header('Location: ./index.php');
+
+
+                        exit();
+                        
+            }
+               else {
+                  echo "error";
+            }
+
+       
+    }
+
+?>
 
 
 <!DOCTYPE html>
@@ -139,7 +173,8 @@
 
 
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                            <button name="empty-cart">Confirm Order!!!</button>
+
+                            <button name="order">Confirm Order!!!</button>
                           
                             
                         </form>
