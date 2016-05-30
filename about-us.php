@@ -1,3 +1,4 @@
+<?php include_once 'includes/db_connect.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,9 +36,10 @@ p{
 	<img src="img/marvel.png" alt="logo">
 </header>
 
-<?php 
 
-    include('main-menu.php');
+<?php  	include ('main-menu.php');
+		include('search-nav.php');
+
 ?>
 <section id="about-us-section">
 	<h2 style="color: white; font-family: verdana;">About Us</h2>
