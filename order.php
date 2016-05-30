@@ -47,12 +47,12 @@ sec_session_start();
 	<table>
 	  	<tr>
 	    	
-	    	<th>Customer Name</th>
-	    	<th>Customer Emaail</th>
-	    	<th>Customer Phone</th>
-	    	<th >Customer Address</th>
-			<th >Product Name</th>
+	    	<th> Name</th>
+	    	<th>Email</th>
+	    	<th> Phone</th>
+	    	<th >Address</th>
 			<th >Total Price</th>
+			<th >Item Names</th>
 			<th >Order Status</th>
 			<th >Action</th>
 			
@@ -84,7 +84,7 @@ sec_session_start();
         				 }
 
 
-		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td>"."<td> " . $row['address']."</td>"."<td> " . $price."</td>"."<td> " . $name."</td>"."<td> " . $row['status']."</td>"."<td>"."<a href =\""."update-product.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
+		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td>"."<td>" . $row['address']."</td>"."<td> " . $price."</td>"."<td> " . $name."</td>"."<td> " . $row['status']."</td>"."<td>"."<a href =\""."update-order.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 
