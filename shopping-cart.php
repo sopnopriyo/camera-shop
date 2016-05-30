@@ -4,7 +4,7 @@
     session_start();
 
 
-    $keys = $_SESSION[cart];
+    $keys = $_SESSION['cart'];
     $array = array_fill_keys($keys, 1);
     
 
