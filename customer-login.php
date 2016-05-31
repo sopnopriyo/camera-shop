@@ -67,7 +67,11 @@ include_once 'includes/db_connect.php';
       <img src="img/marvel.png" alt="logo">
    </header>
 
-   <?php  include 'main-menu.php';?>
+   
+<?php   include ('main-menu.php');
+    include('search-nav.php');
+
+?>
 
 
    <br><br>

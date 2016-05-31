@@ -17,7 +17,9 @@ session_start();
 
 <?php 
 
-    include('main-menu.php')
+    include('main-menu.php');
+    include('search-nav.php');
+      
 ?>
 <body>
 

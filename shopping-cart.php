@@ -41,11 +41,6 @@
 ?>
 
 
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,12 +56,14 @@
 <?php 
 
     include('main-menu.php');
+   // include('search-nav.php');
+    
 ?>
 
  <section id="form"><!--form-->
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div style="margin-top:20px">
 
                     
 

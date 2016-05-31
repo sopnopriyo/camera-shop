@@ -6,9 +6,22 @@ session_start();
    
    <head>
       <title>Update Customer Profile</title>
+      <link rel="stylesheet" type="text/css" href="frontEnd.css"> 
    </head>
    
+   <header>
+  <img src="img/marvel.png" alt="logo">
+</header>
+
+<?php   include ('main-menu.php');
+        include('search-nav.php');
+
+?>
    <body>
+
+     <section> 
+      <center>
+      <div  style = "width:400px; border: solid 1px #333333; margin-top: 20px ">
       <?php 
 
             if (isset($_GET['id'])) {
@@ -69,18 +82,28 @@ session_start();
 
        ?>
    
-      <h2>Member resistration</h2>
-      
-      <form method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Name: <input type="text" name="name"  value="<?php echo $name;?>"><br>
-            Phone: <input type="text" name="phone"  value="<?php echo $phone;?>"><br>
-            Address <textarea name="address" rows="5" cols="20" ><?php echo $address;?> </textarea> <br>
-             <input type="hidden" name="id" value="<?php echo $id;?>" />  <br>
+      <h2>Update Member Information</h2>
 
-            <input type="submit" name="submit" value="Update">
-      </form>
+      
+      
+        <form method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+              Name: <input type="text" name="name"  value="<?php echo $name;?>"><br>
+              Phone: <input type="text" name="phone"  value="<?php echo $phone;?>"><br>
+              Address <textarea name="address" rows="4" cols="50" ><?php echo $address;?> </textarea> <br>
+               <input type="hidden" name="id" value="<?php echo $id;?>" />  <br>
+
+              <input type="submit" name="submit" value="Update">
+        </form>
+
+     
+
+      </div>
+       </center>
+      </section>
       
     
       
    </body>
+
+   <?php include ('footer.php'); ?>
 </html>
