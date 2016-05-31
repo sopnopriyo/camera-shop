@@ -74,6 +74,10 @@ sec_session_start();
 				$result3 = $mysqli->query($sql3);
 				$number_of_message = $result3->num_rows;
 
+				$sql4 = "SELECT id  FROM orderProduct";
+				$result4 = $mysqli->query($sql4);
+				$number_of_order = $result4->num_rows;
+
 
 					
 		  ?>
@@ -90,7 +94,7 @@ sec_session_start();
 		    </div>
 		    <div class="box">
 		        <div class="head">Total Order</div>
-		        <div class="count"><?php echo "0"; ?></div>
+		        <div class="count"><?php echo $number_of_order; ?></div>
 		    </div>
 		    <div class="box">
 		        <div class="head">Total Message</div>
