@@ -99,4 +99,5 @@ include_once 'includes/db_connect.php';
       </div>
 
    </section>
+   <?php include('footer.php');?>
 </html>

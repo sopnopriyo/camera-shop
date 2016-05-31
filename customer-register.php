@@ -4,7 +4,7 @@ include_once 'includes/db_connect.php';
 <html>
    
    <head>
-      <title>Login Page</title>
+      <title>Customer Registation</title>
       <link rel="stylesheet" type="text/css" href="frontEnd.css">   
    </head>
    
@@ -13,7 +13,9 @@ include_once 'includes/db_connect.php';
       <img src="img/marvel.png" alt="logo">
    </header>
 
-   <?php  include 'main-menu.php';?>
+   <?php  include ('main-menu.php');
+            include('search-nav.php');
+   ?>
    
    <body>
       <?php
@@ -94,4 +96,5 @@ include_once 'includes/db_connect.php';
     
       
    </body>
+   <?php include('footer.php');?>
 </html>
