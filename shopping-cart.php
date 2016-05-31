@@ -56,9 +56,20 @@
 <?php 
 
     include('main-menu.php');
-   // include('search-nav.php');
     
 ?>
+
+<nav id="search-nav">
+  <center>
+    <form method="POST" action="search-result.php">
+      <input type="text" name="keyword" placeholder="Type an item">
+        <select name="catagory">
+            <option value ="22">camera</option><option value ="23">Lense</option><option value ="24">Memory Card</option><option value ="25">Camera Bag</option><option value ="26">Accesories</option><option value ="27">DSLR</option><option value ="28">Digital Camera</option><option value ="29">Cam Recorder</option><option value ="30">Flash</option><option value ="31">Tripod</option>      
+      </select>
+      <button type="submit" name="search">Search</button>
+    </form>
+  </center> 
+</nav>
 
  <section id="form"><!--form-->
     <div class="container">
