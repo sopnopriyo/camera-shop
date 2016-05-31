@@ -74,9 +74,7 @@ sec_session_start();
   </table>
 </section>
 
-<footer>
-Copyright © W3Schools.com
-</footer>
+<?php include('footer.php');?>
         <?php else : ?>
             <p>
                 <span class="error">You are not authorized to access this page.</span> Please <a href="login.php">login</a>.
