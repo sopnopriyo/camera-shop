@@ -1,6 +1,9 @@
 <?php 
 
-session_start();
+if (!isset($_SESSION)) {
+
+    session_start();
+}
    
  ?>
 <nav id="navbar" style="font-family:tahoma">
