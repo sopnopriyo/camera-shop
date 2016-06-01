@@ -41,6 +41,17 @@
 
 ?>
 
+
+
+<?php 
+
+    if (isset($_POST['PayButton'])) {
+       $payment= "Paid";
+    }
+
+?>
+
+
 <?php
 
     if ( isset( $_POST['order'] ) ) {
@@ -50,7 +61,14 @@
 
         $customer_id = $_SESSION['id'];
         $item_names = implode(',', $_SESSION['cart']);
-        $status = "created";
+
+        if (empty($payment)) {
+          $status = "Created";
+        }
+        else{
+          $status = "Paid";
+        }
+        
         
 
     
@@ -78,14 +96,6 @@
             }
 
        
-    }
-
-?>
-
-<?php 
-
-    if (isset($_POST['PayButton'])) {
-       $payment= "true";
     }
 
 ?>
