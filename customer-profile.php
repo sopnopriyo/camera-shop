@@ -56,6 +56,8 @@ session_start();
 
 <center>
     <a href="update-customer-profile.php?id=<?php echo $id ?>">Update Profile</a>
+    <a href="orderHistory.php">Order History</a>
+    
 </center>
 <div id="ProfilePage">
     <div id="LeftCol">
