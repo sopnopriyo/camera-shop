@@ -57,6 +57,7 @@ session_start();
         <th>Sr.</th>
         <th>Item Name </th>
         <th>Status</th>
+        <th>Date</th>
         </tr>
         <?php
 
@@ -76,7 +77,7 @@ session_start();
                          }
 
 
-                         echo "<tr>"."<td>".$index++."</td>"."<td>" . $name . "</td><td> " . $row['status']."</td></tr>"; 
+                         echo "<tr>"."<td>".$index++."</td>"."<td>" . $name . "</td>"."<td> " . $row['status']."</td>"."<td> " . $row['created_date']."</td>"."</tr>"; 
                     }
 
 
