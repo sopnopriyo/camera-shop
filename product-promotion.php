@@ -103,7 +103,7 @@ sec_session_start();
 
         Name: <input type="text" name="name"  value="<?php echo $name;?>"><br>
         Price: <input type="text" name="price"  value="<?php echo $price;?>"><br>
-        Promotion: <input type="text" name="promotion"  value="<?php echo $promotion;?>"><br>
+        Promotion Amount: <input type="text" name="promotion"  value="<?php echo $promotion;?>"><br>
         
         <input type="hidden" name="id" value="<?php echo $id;?>" />  <br>
 

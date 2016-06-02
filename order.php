@@ -54,6 +54,7 @@ sec_session_start();
 			<th >Total Price</th>
 			<th >Item Names</th>
 			<th >Order Status</th>
+			<th >Created Date</th>
 			<th >Action</th>
 			
 			
@@ -61,7 +62,7 @@ sec_session_start();
 			
 	    </tr>
 			<?php 
-				$sql = "SELECT c.name,c.email,c.phone,c.address ,o.id,o.status,o.item_id FROM customer c,orderProduct o WHERE o.customer_id = c.id  ";
+				$sql = "SELECT c.name,c.email,c.phone,c.address ,o.id,o.status,o.item_id,o.created_date FROM customer c,orderProduct o WHERE o.customer_id = c.id  ";
 				$result = $mysqli->query($sql);
 
 				if ($result->num_rows > 0) {
@@ -84,7 +85,7 @@ sec_session_start();
         				 }
 
 
-		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td>"."<td>" . $row['address']."</td>"."<td> " . $price."</td>"."<td> " . $name."</td>"."<td> " . $row['status']."</td>"."<td>"."<a href =\""."update-order.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
+		         		 echo "<tr><td>" . $row['name'] . "</td><td> " . $row['email'] ."</td><td> " . $row['phone'] ."</td>"."<td>" . $row['address']."</td>"."<td> " . $price."</td>"."<td> " . $name."</td>"."<td> " . $row['status']."</td>"."<td> " . $row['created_date']."</td>"."<td>"."<a href =\""."update-order.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 

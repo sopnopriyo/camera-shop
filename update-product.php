@@ -110,7 +110,7 @@ sec_session_start();
         Name: <input type="text" name="name"  value="<?php echo $name;?>"><br>
         Color: <input type="text" name="color"  value="<?php echo $color;?>"><br>
         Price: <input type="text" name="price"  value="<?php echo $price;?>"><br>
-        Quantity: <input type="text" name="quanity"  value="<?php echo $quantity;?>"><br>
+        Quantity: <input type="text" name="quantity"  value="<?php echo $quantity;?>"><br>
         Description <textarea name="description" rows="5" cols="20" ><?php echo $description;?> </textarea>
         
         <input type="hidden" name="id" value="<?php echo $id;?>" />  <br>
