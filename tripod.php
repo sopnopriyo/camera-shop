@@ -26,7 +26,7 @@ include_once 'includes/db_connect.php';
 
 <section id="contents">
    <div id="accesories-page-content">
-                      <h3>Top products</h3>
+                      <h3>Tripod</h3>
                      <ul>
 
                     <?php

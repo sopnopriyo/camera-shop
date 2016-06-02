@@ -26,7 +26,7 @@
 
 <section id="camera-contents">
    <div id="camera-page-content">
-                    <h3>Top products</h3>
+                    <h3>Top Cameras</h3>
                     
                     <ul>
 

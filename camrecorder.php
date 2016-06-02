@@ -28,7 +28,7 @@ include_once 'includes/db_connect.php';
 
 <section id="camera-contents">
    <div id="camera-page-content">
-                    <h3>Top products</h3>
+                    <h3>Camcoder</h3>
                     
                     <ul>
 
