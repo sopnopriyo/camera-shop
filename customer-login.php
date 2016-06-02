@@ -32,6 +32,8 @@ include_once 'includes/db_connect.php';
             {
                $_SESSION['name'] =$row['name'];
                $_SESSION['id'] =$row['id'];
+               $_SESSION['user_email'] =$row['email'];
+               
                   
             }
 

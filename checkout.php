@@ -80,6 +80,21 @@
 
                         unset($_SESSION['cart']);
 
+                        $sql2 = "SELECT name,price FROM product WHERE id IN ($whereIn)";
+                        $result2 = $mysqli->query($sql2);
+                          
+                        while($row2 = mysqli_fetch_assoc($result2)){
+                          $name.=$row2['name'].",  ";
+                          $price+= $row2['price'];
+                        }
+
+
+                          $to = $_SESSION['user_email'];
+                          $subject = "order recipt";
+                          $msg = "Items are : ".$name."\n Total Price".$price;
+                          
+                          mail($to,$subject,$msg);
+
 
                           echo "<script type=\"text/javascript\">alert('Thank you , an email with order details has been sent to your email.');
                            window.location.replace(\"/index.php\");
