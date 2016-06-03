@@ -32,7 +32,7 @@ sec_session_start();
 
 
 <section id="dashboard-main">
-		<h2>Colored Table Header</h2>
+		<h2>Product List</h2>
 		<p><a href="addProduct.php">Add Product</a></p>
 		<?php 
 
