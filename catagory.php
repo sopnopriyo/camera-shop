@@ -39,7 +39,7 @@ sec_session_start();
 
 
 <section id="dashboard-main">
-		<h2>Colored Table Header</h2>
+		<h2>Catagory List</h2>
 		<p><a href="addCatagory.php">Add Catagory</a></p>
 		<?php 
 
@@ -56,7 +56,7 @@ sec_session_start();
 	  	<tr>
 	    	<th>Sr. No</th>
 	    	<th>Catagory Name</th>
-	    	<th>Action</th>
+	    	<th colspan="6">Action</th>
 	    </tr>
 			<?php 
 				$sql = "SELECT id, name  FROM catagory ORDER BY id ASC";
@@ -67,7 +67,7 @@ sec_session_start();
 
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td> <td>"."<button> Edit</button> <button> Delete</button>"."</td></tr>"; 
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name']."<td>"."<a href =\""."delete-catagory.php?id=".$row['id'].""."\"".">"."Delete"."</a>"."</td>"."<td>"."<a href =\""."update-catagory.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 
@@ -79,9 +79,7 @@ sec_session_start();
   </table>
 </section>
 
-<footer>
-Copyright © W3Schools.com
-</footer>
+<?php include('footer.php');?>
         <?php else : ?>
             <p>
                 <span class="error">You are not authorized to access this page.</span> Please <a href="login.php">login</a>.

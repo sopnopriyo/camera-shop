@@ -1,3 +1,8 @@
+<?php
+include_once 'includes/db_connect.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +17,9 @@
 
 <?php 
 
-    include('main-menu.php')
+    include('main-menu.php');
+    include('search-nav.php');
+      
 ?>
 <body>
 
@@ -20,6 +27,38 @@
 
 </style>
 
+
+<?php
+    if (isset($_SESSION['name'])) {
+        $id = $_SESSION['id'];
+
+
+        $name = $email = $phone = $address ="";
+
+        $sql = "SELECT * FROM customer WHERE id = $id";
+
+           $result = $mysqli->query($sql);
+
+            if ($result->num_rows > 0) {
+               
+
+                while($row = mysqli_fetch_array($result))
+                {
+                    $name = $row['name'];
+                    $phone = $row['phone'];
+                    $email = $row['email'];
+                    $address = $row['address'];
+                       
+                }
+            }
+    }
+?>
+
+<center>
+    <a href="update-customer-profile.php?id=<?php echo $id ?>">Update Profile</a>
+    <a href="orderHistory.php">Order History</a>
+    
+</center>
 <div id="ProfilePage">
     <div id="LeftCol">
         <div id="Photo">
@@ -27,26 +66,26 @@
         <img src="img/profile.png" height="200px" width="200px">
         </div>
         <div id="ProfileOptions">
-        Sirjon
+        <?php echo $name?>
         </div>
     </div>
 
     <div id="Info">
         <p>
             <strong>Name:</strong>
-            <span>Sirjon</span>
+            <span><?php echo $name?></span>
         </p>
         <p>
             <strong>email:</strong>
-            <span>abc@example.com</span>
+            <span><?php echo $email?></span>
         </p>
         <p>
             <strong>phone:</strong>
-            <span>+6012222222</span>
+            <span><?php echo $phone?></span>
         </p>
         <p>
             <strong>Address:</strong>
-            <span>ababa,m ahsaha, ahah , hahahha ,lahahhaha, jakl</span>
+            <span><?php echo $address?></span>
         </p>
         <p>
             <strong>Member Since:</strong>
@@ -58,6 +97,7 @@
     <div style="clear:both"></div>
 </div>
 
+<?php include('footer.php');?>
 
 </body>
 </html>

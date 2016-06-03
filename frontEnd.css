@@ -5,53 +5,58 @@ html,
             margin: 0px;
             border: 0;
             display: block;  /* No floating content on sides */
-            background-color: #66CC99;
+            background-color: white;
 }
 header {
-    background-color: #66CC99;
-    color:white;
+    background-color: black;
     text-align:center;
-    padding:5px;     
+    padding:0;     
 }
 
-#top-main-nav ul {
-    line-height:30px;
-    background-color: #F5F5F5;
-    height:35px;
-    margin:0;
-    overflow: visible;
-    padding-left: 5%;
-    padding-right: 5%
-    color:#301F22;
-    font-family: tahoma;
+header img{
+    width:100%;
+}
 
-        
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
 }
-#top-main-nav ul li{
-    display:inline; 
-    margin:5px;
-    
+
+#navbar li {
+    float: left;
 }
-#top-main-nav ul li a{
-    color: #000;
-    padding: 8px 0 8px 16px;
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-#top-main-nav ul li a.active {
-    background-color: #4CAF50;
-    color: white;
+#navbar li a:hover {
+    background-color: #111;
 }
 
-#top-main-nav li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+#navbar ul ul {
+    display: none;
+    position: absolute;
 }
 
-#top-main-nav ul li.right {
- float:right;
- padding-right: 10px;
+#navbar ul li:hover ul {
+    display: block;
+    background-color: black;
+
 }
+
+#navbar ul li:hover ul li {
+   float: left;
+    
+}
+
 footer {
     background-color: #332225;
     color:white;
@@ -66,10 +71,35 @@ footer {
 Home Page start
 */
 
+
 #search-nav{
-    background-color: #FF7800;
+    background-color: gray;
     overflow: visible;
     font-family: tahoma;
+    height: auto;
+    padding: 5px;
+}
+
+#search-nav input[type="text"]{
+    padding: 3px;
+}
+
+#search-nav select {
+    padding: 3px;
+    cursor: pointer;
+}
+
+#search-nav button[type="submit"]{
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: white;
+}
+
+#search-nav button[type="submit"]:hover:not(.active){
+    background-color: black;
+    color: white;
 }
 
 
@@ -119,12 +149,13 @@ Home Page start
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #66CC99;
+    background-color: white;
     width: 70%;
     margin-top: 10px;
+    margin-left: 15%;
     padding-bottom: 30px;
     border: 1px solid #E9E9E9;
-     font-family: tahoma;
+    font-family: tahoma;
 }
 
 
@@ -283,9 +314,10 @@ Camera Page Start
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #66CC99;
+    background-color: white;
     width: 70%;
     margin-top: 10px;
+    margin-left: 15%;
     padding-bottom: 30px;
     border: 1px solid #E9E9E9;
 }
@@ -322,22 +354,23 @@ Camera Page Start
     float:left;
     padding-bottom: 21px;
     width: 23%;
-    background-color: #fbfbfb;
-    border-radius:25px; 
-    border: 2px solid #FF7800;
+    background-color: white;
+    border: 2px solid #E0E0E0;
     margin: 5px;
 }
 
 
 #camera-page-content ul li:hover {
-    background-color:#F0FFF0;
+    border-color: #606060;
 }
 
 #camera-page-content ul li .img {
+    padding: 15px ;
     text-align: center;
 }
 
 #camera-page-content ul li .img img {
+    
     height:128px;
     width:128px;
 }
@@ -361,7 +394,7 @@ Camera Page Start
 }
 
 #camera-page-content ul li .info .price {
-    background: none repeat scroll 0 0 #66CC99;
+    background: none repeat scroll 0 0 rgb(217, 224, 206);
     color: black;
     text-align: center;
     font-size: 12px;
@@ -381,8 +414,8 @@ Camera Page Start
     overflow:hidden;
 }
 #camera-page-content ul li .info .actions a {
-    border: 1px solid #73AD21;
-    color: #009832;
+    border: 1px solid rgb(217, 224, 206);
+    color: black;
     text-align: center;
     display: block;
     font-size: 11px;
@@ -391,6 +424,10 @@ Camera Page Start
     padding: 5px;
     text-decoration: none;
 }
+#camera-page-content ul li .info .actions a:hover {
+    border-color: #606060;
+}
+
 
 /*
 Camera Page Finish
@@ -446,7 +483,7 @@ accesories Page Start
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #F5F5F5;
+    background-color: #white;
     width: 70%;
     margin-top: 10px;
     padding-bottom: 30px;
@@ -485,15 +522,14 @@ accesories Page Start
     float:left;
     padding-bottom: 21px;
     width: 23%;
-    background-color: #fbfbfb;
-    border-radius:25px; 
-    border: 2px solid #FF7800;
+    background-color: white; 
+    border: 2px solid #E0E0E0;
     margin: 5px;
 }
 
 
 #accesories-page-content ul li:hover {
-    background-color:#F0FFF0;
+    border-color: #606060;
 }
 
 #accesories-page-content ul li .img {
@@ -501,6 +537,7 @@ accesories Page Start
 }
 
 #accesories-page-content ul li .img img {
+    padding: 15px;
     height:128px;
     width:128px;
 }
@@ -524,7 +561,7 @@ accesories Page Start
 }
 
 #accesories-page-content ul li .info .price {
-    background: none repeat scroll 0 0 #66CC99;
+    background: none repeat scroll 0 0 rgb(217, 224, 206);
     color: black;
     text-align: center;
     font-size: 12px;
@@ -568,9 +605,11 @@ About Us Page Start
 */
 
 #about-us-section{
-    margin: 1%;
-    background-color:#66CC99;
+    padding: 0 10% 0 10%;
+    
      font-family: tahoma;
+     width: auto;
+
 }
 
 
@@ -920,3 +959,63 @@ td.checkout {
 /*
 Shopping Cart Finish
 */
+
+/*
+rating
+ */
+
+ .rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}

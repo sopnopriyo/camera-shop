@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/db_connect.php';
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,126 +19,62 @@
 
 <?php 
 
-    include('main-menu.php')
+    include('main-menu.php');
+    include('search-nav.php');
 ?>
-<nav id="search-nav">
-  <center>
-    <form method="post" action="search-result.html">
-      <input type="text" name="keyword" placeholder="Type an item">
-      <select>
-        <option value="camera">Camera</option>
-        <option value="lense">Lenses</option>
-        <option value="accesories">Accesories</option>
-        <option value="mercedes">Others</option>
-      </select>
-      <button type="submit" name="search">Search</button>
-    </form>
-  </center> 
-</nav>
 
-<aside id="accesories-page-sidebar">
-<h1 style="color: #FF7800">Categories</h1>
 
-    <nav>
-        <ul class="sidenav">
-            <li> <a href="lense.php">Lense</a></li>
-            <li> <a href="flash.php">Flash</a></li>
-            <li> <a href="tripod.php">Tripod</a></li>
-            <li> <a href="memorycard.php">Memory Card</a></li>
-            <li> <a href="bagcase.php">Bag and Case</a></li>
-            <li> <a href="accesories.php">Accesories</a></li>
-       </ul> 
-    </nav>
-</aside>
 
 <section id="contents">
    <div id="accesories-page-content">
-                      <h3>Top products</h3>
-                    <ul>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L1.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Tamron 16-300mm</a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$450.00</strong>
+                      <h3>Lens</h3>
+                     <ul>
+
+                    <?php
+                        $sql = "SELECT * 
+                                FROM product
+                                WHERE catagory_id = 23
+                                ";
+
+                       $result = $mysqli->query($sql);
+
+                        if ($result->num_rows > 0) {
+                           
+
+                            while($row = mysqli_fetch_array($result))
+                            {
+
+                                ?>
+            
+                            <li>
+                                <div class="img"><a href="#"><img alt="" src="<?php echo $row['image']; ?>"></a></div>
+                                <div class="info">
+                                    <a class="title" href="product-details.php"><?php echo $row['name']; ?></a>
+                                    <div class="price">
+                                        <span class="st">Our price:</span><strong>$<?php echo $row['price']; ?></strong>
+                                    </div>
+                                    <div class="actions">
+                                        <a href="product-details.php?id=<?php echo $row['id']; ?>">Details</a>
+                                    </div>
                                 </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                       <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L2.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Tamron SP 150-600mm </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$800.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L3.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Tamron SP 150-600mm </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$810.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L4.jpg"></a></div>
-                            <div class="info">
-                                <a class="title" href="product-details.php">Tamron 16-300mm </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$410.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L5.jpg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Tamron 18-270mm </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$992.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L7.jpg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Canon EF 600mm </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$1099.00</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><a href="#"><img alt="" src="acc/L8.jpg"></a></div>
-                            <div class="info">
-                               <a class="title" href="product-details.php">Canon EF 800mm </a>
-                                <div class="price">
-                                    <span class="st">Our price:</span><strong>$999.10</strong>
-                                </div>
-                                <div class="actions">
-                                    <a href="product-details.php">Details</a>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        
+
+                            <?php
+
+
+
+                            }
+                        
+                            } 
+                            else {
+                                echo "No result found";
+                            }
+                    ?>
+
+                       
+                    
+
                     </ul>
                 </div>
 

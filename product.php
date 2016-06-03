@@ -32,7 +32,7 @@ sec_session_start();
 
 
 <section id="dashboard-main">
-		<h2>Colored Table Header</h2>
+		<h2>Product List</h2>
 		<p><a href="addProduct.php">Add Product</a></p>
 		<?php 
 
@@ -52,18 +52,20 @@ sec_session_start();
 	    	<th>Stock Status</th>
 			<th>Catagory</th>
 			<th>Price</th>
+			<th>Quantity</th>
+			<th colspan="6"> Action </th>
+
 
 	    </tr>
 			<?php 
-				$sql = "SELECT p.id, p.name,p.price,p.stock_status, c.name as cat  FROM product p, catagory c where c.name =(select name from catagory where id = p.catagory_id)";
+				$sql = "SELECT p.id, p.name,p.price,p.stock_status, p.quantity ,c.name as cat  FROM product p, catagory c where c.name =(select name from catagory where id = p.catagory_id)";
 				$result = $mysqli->query($sql);
 
 				if ($result->num_rows > 0) {
-			   		//var_dump($row)
-
+			   		
 			   		while($row = mysqli_fetch_array($result))
 		          	{
-		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] . "</td></tr>"; 
+		         		 echo "<tr><td>" . $row['id'] . "</td><td> " . $row['name'] ."</td><td> " . $row['stock_status'] ."</td><td> " . $row['cat'] ."</td><td> " . $row['price'] ."</td><td>".$row['quantity']."</td>"."<td>"."<a href =\""."delete-product.php?id=".$row['id'].""."\"".">"."Delete"."</a>"."</td>"."<td>"."<a href =\""."update-product.php?id=".$row['id'].""."\"".">"."Update"."</a>"."</td>"."<td>"."<a href =\""."product-promotion.php?id=".$row['id'].""."\"".">"."Promotion"."</a>"."</td>"."</tr>"; 
 		          	}
 			    
 				} 
@@ -76,7 +78,7 @@ sec_session_start();
 </section>
 
 <footer>
-Copyright © W3Schools.com
+Copyright © sopnopriyo.com
 </footer>
         <?php else : ?>
             <p>

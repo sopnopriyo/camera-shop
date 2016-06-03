@@ -1,3 +1,10 @@
+<?php
+  include_once 'includes/db_connect.php';
+  $id = $_GET['id'];
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,52 +24,68 @@
 
 <?php 
 
-    include('main-menu.php')
-?>
-<nav id="search-nav">
-  <center>
-    <form method="post" action="search-result.html">
-      <input type="text" name="keyword" placeholder="Type an item">
-      <select>
-        <option value="camera">Camera</option>
-        <option value="lense">Lenses</option>
-        <option value="accesories">Accesories</option>
-        <option value="mercedes">Others</option>
-      </select>
-      <button type="submit" name="search">Search</button>
-    </form>
-  </center> 
-</nav>
+    include('main-menu.php');
+    include('search-nav.php');
+    
+?>	
 
-
-	<body>
+<body>
 		<div class="product clear">
-			<header>
+
+	<?php 
+		
+			$sql = "SELECT * FROM product WHERE id = $id";
+	$result = $mysqli->query($sql);
+
+	
+	if ($result->num_rows > 0) {                           
+
+    while($row = mysqli_fetch_array($result))
+    	{
+    		?>
+
+    		<header>
 				<hgroup>
-					<h1>Canon Eos 5D</h1>
-					<h4>The most amazing Camera.</h4>
+					<h1 style="color: white;"><?php echo $row['name'] ?></h1>
+					<h3 style="color: white;"><?php echo $row['color'] ?></h3>
 				</hgroup>
 			</header>
+
 			<figure>
-				<img src="img/details-camera.png">
+				<img src="<?php echo $row['image'] ?>">
 			</figure>
+
 			<section>
-				<p>The faster dual-core A5 chip. The 25MP camera with all-new optics also shoots 1080p HD video. It's the most amazing Camera yet.</p>
+				<p>The price is <?php echo $row['price'] ?></p>
 				<details>
 					<summary>Product Features</summary>
+
 						<ul>
-							<li>20 mega pixel camera with full 1080p video recording</li>
-							<li>Auto Focus</li>
-							<li>Large Capacity</li>
-							<li>Nice</li>
-							<li>Retina display</li>
-							<li>Photo and video geotagging</li>
+							<?php $array = explode(',', $row['description']);
+							
+								for ($i=0; $i <sizeof($array) ; $i++) { 
+									//print_r($array[$i]);
+									echo "<li>".$array[$i]."</li>";
+								}
+							?>
 						</ul>
 				</details>
-				<a href="shopping-cart.html"><button >Add to Cart</button></a>
+				<a href="add-to-cart.php?id=<?php echo $row['id'] ?>"><button >Add to Cart</button></a>
+
+
+				<?php include('product-rating.php') ;?>
 				 
 			</section>
-		</div>
+    		<?php
+    		
+
+    	}
+	}
+		
+	?>
+</div>
+
+
 		<script>
 			if ($('html').hasClass('no-details')) {
 				
